@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kitemploitogo-beep.github.io/Togotek-/sitemap.xml
