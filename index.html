@@ -1,0 +1,2115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TOGOTEK — Site web pro en 24h · dès 5 000 F · Lomé, Togo</title>
+<meta name="description" content="Attirez plus de clients avec une page web pro en 24h. Dès 5 000 FCFA. Paiement Flooz/T-Money APRÈS validation. Basé à Lomé, Togo. Zéro risque.">
+
+<!-- SEO : Indexation -->
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://kitemploitogo-beep.github.io/Togotek-/">
+
+<!-- SEO : Mots-clés -->
+<meta name="keywords" content="site web Lomé, création site web Togo, TOGOTEK, page web professionnelle Togo, agence digitale Lomé, site internet pas cher Togo, Flooz T-Money">
+
+<!-- Open Graph (partage WhatsApp, Facebook) -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="TOGOTEK — Site web pro en 24h · dès 5 000 F · Lomé, Togo">
+<meta property="og:description" content="Attirez plus de clients avec une page web pro en 24h. Dès 5 000 FCFA. Paiement Flooz/T-Money APRÈS validation. Basé à Lomé, Togo.">
+<meta property="og:url" content="https://kitemploitogo-beep.github.io/Togotek-/">
+<meta property="og:locale" content="fr_TG">
+
+<!-- Données structurées Google (LocalBusiness) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "TOGOTEK",
+  "description": "Services digitaux pour petites entreprises à Lomé : sites web, PDFs, visuels. Dès 5 000 FCFA.",
+  "url": "https://kitemploitogo-beep.github.io/Togotek-/",
+  "telephone": "",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Lomé",
+    "addressCountry": "TG"
+  },
+  "priceRange": "5 000 - 25 000 FCFA",
+  "currenciesAccepted": "XOF",
+  "paymentAccepted": "Flooz, T-Money",
+  "areaServed": "Togo"
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cabinet+Grotesk:wght@400;500;700;800;900&family=Fraunces:ital,wght@0,300;0,700;0,900;1,300;1,700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --orange:#E8600A;
+  --orange2:#FF7C2A;
+  --orange3:#FFA05A;
+  --dark:#0C0B09;
+  --dark2:#141210;
+  --dark3:#1C1915;
+  --dark4:#242018;
+  --cream:#F5EFE0;
+  --cream2:#EDE4CC;
+  --text:#C8BFA8;
+  --muted:#7A7060;
+  --white:#FAF8F4;
+  --green:#25D366;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  background:var(--dark);
+  color:var(--text);
+  font-family:'Cabinet Grotesk',sans-serif;
+  overflow-x:hidden;
+}
+
+/* ===== WHATSAPP FLOTTANT ===== */
+.wa-float{
+  position:fixed;bottom:2rem;right:1.5rem;z-index:9990;
+  width:58px;height:58px;border-radius:50%;
+  background:var(--green);
+  display:flex;align-items:center;justify-content:center;
+  box-shadow:0 6px 25px rgba(37,211,102,0.5);
+  cursor:pointer;text-decoration:none;
+  animation:waPulse 2.5s infinite;
+}
+.wa-float svg{width:30px;height:30px;fill:white;}
+@keyframes waPulse{
+  0%,100%{box-shadow:0 6px 25px rgba(37,211,102,0.45);}
+  50%{box-shadow:0 6px 35px rgba(37,211,102,0.75),0 0 0 10px rgba(37,211,102,0.12);}
+}
+
+/* ===== NAV ===== */
+nav{
+  position:fixed;top:0;width:100%;z-index:1000;
+  padding:0 2rem;height:64px;
+  display:flex;align-items:center;justify-content:space-between;
+  background:rgba(12,11,9,0.97);
+  backdrop-filter:blur(20px);
+  border-bottom:1px solid rgba(232,96,10,0.1);
+}
+.logo{
+  font-family:'Fraunces',serif;
+  font-size:1.4rem;font-weight:900;
+  color:var(--cream);cursor:pointer;
+}
+.logo span{color:var(--orange);}
+.nav-menu{display:flex;gap:0.3rem;list-style:none;align-items:center;}
+.nav-btn{
+  padding:0.45rem 1rem;border-radius:4px;
+  font-size:0.82rem;font-weight:600;
+  cursor:pointer;border:none;
+  background:transparent;color:var(--muted);
+  transition:all 0.2s;font-family:'Cabinet Grotesk',sans-serif;
+}
+.nav-btn:hover{color:var(--cream);background:rgba(255,255,255,0.04);}
+.nav-btn.active{color:var(--orange);}
+.nav-cta{
+  background:var(--orange);color:var(--white);
+  padding:0.5rem 1.2rem;border-radius:4px;
+  font-size:0.82rem;font-weight:700;
+  cursor:pointer;border:none;
+  font-family:'Cabinet Grotesk',sans-serif;
+  transition:all 0.2s;text-decoration:none;display:inline-block;
+}
+.nav-cta:hover{background:var(--orange2);}
+.hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;padding:8px;}
+.hamburger span{width:22px;height:2px;background:var(--cream);border-radius:2px;transition:all 0.3s;}
+
+/* ===== PAGES ===== */
+.page{display:none;min-height:100vh;padding-top:64px;}
+.page.active{display:block;}
+
+/* ===== HERO ===== */
+.hero{
+  padding:3.5rem 2rem 3rem;
+  position:relative;overflow:hidden;
+  min-height:calc(100vh - 64px);
+  display:flex;align-items:center;
+}
+.hero-bg{
+  position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse 60% 70% at 5% 50%,rgba(232,96,10,0.12) 0%,transparent 65%),
+    radial-gradient(ellipse 40% 50% at 95% 10%,rgba(232,96,10,0.06) 0%,transparent 60%);
+  pointer-events:none;
+}
+.hero-content{position:relative;z-index:2;max-width:640px;width:100%;}
+
+.hero-trust-row{
+  display:flex;align-items:center;gap:0.6rem;
+  margin-bottom:1.5rem;flex-wrap:wrap;
+}
+.badge-live{
+  display:inline-flex;align-items:center;gap:0.4rem;
+  background:rgba(29,185,84,0.1);border:1px solid rgba(29,185,84,0.25);
+  border-radius:20px;padding:0.25rem 0.75rem;
+  font-size:0.7rem;font-weight:700;color:#4ade80;
+  font-family:'DM Mono',monospace;letter-spacing:1px;
+  animation:fadeUp 0.6s ease both;
+}
+.badge-live-dot{width:5px;height:5px;background:#4ade80;border-radius:50%;animation:blink 1.5s infinite;}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:0.2;};}
+.badge-local{
+  display:inline-flex;align-items:center;gap:0.35rem;
+  background:rgba(232,96,10,0.08);border:1px solid rgba(232,96,10,0.2);
+  border-radius:20px;padding:0.25rem 0.75rem;
+  font-size:0.7rem;font-weight:700;color:var(--orange3);
+  font-family:'DM Mono',monospace;letter-spacing:1px;
+  animation:fadeUp 0.6s 0.05s ease both;
+}
+
+h1.hero-h1{
+  font-family:'Fraunces',serif;
+  font-size:clamp(2.8rem,8vw,5.5rem);
+  font-weight:900;line-height:1;
+  letter-spacing:-2px;color:var(--cream);
+  animation:fadeUp 0.7s 0.1s ease both;
+  margin-bottom:0.4rem;
+}
+h1.hero-h1 em{font-style:italic;font-weight:300;color:var(--orange);}
+.hero-price-line{
+  font-family:'Fraunces',serif;
+  font-size:clamp(1.6rem,4vw,2.8rem);
+  font-weight:700;line-height:1.1;
+  color:var(--cream2);letter-spacing:-1px;
+  animation:fadeUp 0.7s 0.15s ease both;
+  margin-bottom:1.2rem;
+}
+.hero-price-line strong{color:var(--orange);}
+
+.hero-sub{
+  font-size:0.95rem;color:var(--muted);line-height:1.7;
+  max-width:480px;
+  animation:fadeUp 0.7s 0.2s ease both;
+  margin-bottom:1.8rem;
+}
+.hero-sub strong{color:var(--cream);}
+
+.hero-actions{
+  display:flex;gap:0.9rem;flex-wrap:wrap;
+  animation:fadeUp 0.7s 0.28s ease both;
+  margin-bottom:2rem;
+}
+.btn-primary{
+  background:var(--orange);color:var(--white);
+  padding:1rem 1.8rem;border-radius:6px;
+  font-weight:800;font-size:0.95rem;
+  border:none;cursor:pointer;
+  font-family:'Cabinet Grotesk',sans-serif;
+  text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;
+  transition:all 0.2s;
+  min-height:48px;
+}
+.btn-primary:hover{background:var(--orange2);transform:translateY(-2px);box-shadow:0 8px 25px rgba(232,96,10,0.35);}
+.btn-secondary{
+  background:transparent;
+  border:1.5px solid rgba(232,96,10,0.3);
+  color:var(--orange);
+  padding:1rem 1.6rem;border-radius:6px;
+  font-weight:600;font-size:0.9rem;
+  cursor:pointer;
+  font-family:'Cabinet Grotesk',sans-serif;
+  transition:all 0.2s;
+  min-height:48px;display:inline-flex;align-items:center;
+}
+.btn-secondary:hover{background:rgba(232,96,10,0.07);border-color:var(--orange);}
+
+.hero-reassurance{
+  display:flex;gap:1.5rem;flex-wrap:wrap;
+  animation:fadeUp 0.7s 0.35s ease both;
+  padding-top:1.5rem;
+  border-top:1px solid rgba(255,255,255,0.06);
+}
+.reassure-item{
+  display:flex;align-items:center;gap:0.4rem;
+  font-size:0.78rem;font-weight:600;color:var(--muted);
+}
+.reassure-item .check{color:#4ade80;font-size:0.85rem;}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);}}
+
+/* ===== TICKER ===== */
+.ticker{
+  background:var(--orange);padding:0.65rem 0;
+  overflow:hidden;white-space:nowrap;
+}
+.ticker-inner{
+  display:inline-flex;gap:0;
+  animation:ticker 28s linear infinite;
+}
+.ticker-item{
+  font-family:'DM Mono',monospace;
+  font-size:0.72rem;font-weight:500;
+  color:var(--white);letter-spacing:2px;text-transform:uppercase;
+  padding:0 2rem;
+  display:flex;align-items:center;gap:2rem;
+}
+.ticker-sep{opacity:0.5;}
+@keyframes ticker{from{transform:translateX(0);}to{transform:translateX(-50%);}}
+
+/* ===== SECTION LABELS ===== */
+.sec-label{
+  font-family:'DM Mono',monospace;
+  font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;
+  color:var(--orange);margin-bottom:0.8rem;
+}
+.sec-title{
+  font-family:'Fraunces',serif;
+  font-size:clamp(1.8rem,4vw,2.8rem);font-weight:900;
+  color:var(--cream);letter-spacing:-1px;line-height:1.05;
+}
+.sec-title em{color:var(--orange);font-style:italic;}
+.sec-sub{font-size:0.88rem;color:var(--muted);line-height:1.7;margin-top:0.6rem;max-width:500px;}
+
+/* ===== CE QUE ÇA CHANGE ===== */
+.gains-section{padding:4rem 2rem;background:var(--dark2);}
+.gains-grid{
+  display:grid;grid-template-columns:repeat(2,1fr);
+  gap:1rem;margin-top:2.5rem;
+}
+.gain-card{
+  background:var(--dark3);border-radius:10px;
+  padding:1.5rem;
+  border:1px solid rgba(255,255,255,0.04);
+  transition:all 0.25s;
+}
+.gain-card:hover{border-color:rgba(232,96,10,0.2);}
+.gain-icon{font-size:2rem;margin-bottom:0.8rem;}
+.gain-title{font-size:0.95rem;font-weight:700;color:var(--cream);margin-bottom:0.4rem;}
+.gain-desc{font-size:0.8rem;color:var(--muted);line-height:1.65;}
+
+/* ===== TEMOIGNAGES ===== */
+.testi-section{padding:4rem 2rem;background:var(--dark);}
+.testi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.5rem;}
+.testi-card{
+  background:var(--dark2);border-radius:10px;
+  padding:1.6rem;border:1px solid rgba(255,255,255,0.05);
+  position:relative;
+}
+.testi-service-tag{
+  display:inline-block;margin-bottom:0.8rem;
+  font-family:'DM Mono',monospace;font-size:0.63rem;
+  color:var(--orange);letter-spacing:1.5px;text-transform:uppercase;
+  background:rgba(232,96,10,0.08);padding:0.2rem 0.55rem;border-radius:2px;
+}
+.testi-quote{
+  font-size:2.2rem;line-height:1;color:rgba(232,96,10,0.25);
+  font-family:'Fraunces',serif;font-weight:900;
+  margin-bottom:0.3rem;
+}
+.testi-text{
+  font-size:0.85rem;color:var(--text);
+  line-height:1.7;margin-bottom:1.2rem;
+  font-style:italic;
+}
+.testi-footer{display:flex;align-items:center;gap:0.8rem;}
+.testi-avatar{
+  width:40px;height:40px;border-radius:50%;
+  background:linear-gradient(135deg,var(--orange),var(--orange2));
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.78rem;font-weight:800;color:var(--white);
+  flex-shrink:0;font-family:'Fraunces',serif;
+}
+.testi-name{font-size:0.82rem;font-weight:700;color:var(--cream);}
+.testi-biz{font-size:0.72rem;color:var(--muted);margin-top:0.1rem;}
+.testi-stars{margin-left:auto;font-size:0.72rem;color:var(--orange);}
+
+/* ===== PROCESSUS ===== */
+.process-section{padding:4rem 2rem;background:var(--dark2);}
+.pm-steps{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:1rem;margin-top:2.5rem;
+  position:relative;
+}
+.pm-step{
+  background:var(--dark3);border-radius:10px;
+  padding:1.5rem 1.2rem;
+  border:1px solid rgba(255,255,255,0.04);
+  position:relative;
+}
+.pm-num{
+  font-family:'Fraunces',serif;
+  font-size:2.2rem;font-weight:900;
+  color:rgba(232,96,10,0.18);
+  line-height:1;margin-bottom:0.8rem;
+}
+.pm-title{font-size:0.88rem;font-weight:700;color:var(--cream);margin-bottom:0.4rem;}
+.pm-desc{font-size:0.78rem;color:var(--muted);line-height:1.6;}
+
+/* ===== GARANTIE BANDE ===== */
+.garantie-band{
+  background:linear-gradient(135deg,rgba(29,185,84,0.08),rgba(12,11,9,0.95));
+  border:1px solid rgba(29,185,84,0.15);
+  border-radius:12px;
+  margin:0 2rem;
+  padding:1.8rem 2rem;
+  display:flex;align-items:center;gap:2rem;flex-wrap:wrap;
+}
+.garantie-icon{font-size:2.5rem;flex-shrink:0;}
+.garantie-title{
+  font-size:1.1rem;font-weight:800;color:var(--cream);
+  margin-bottom:0.3rem;font-family:'Fraunces',serif;
+}
+.garantie-items{display:flex;gap:1.5rem;flex-wrap:wrap;margin-top:0.6rem;}
+.garantie-item{
+  display:flex;align-items:center;gap:0.4rem;
+  font-size:0.78rem;font-weight:600;color:var(--muted);
+}
+.garantie-item .g-check{color:#4ade80;}
+
+/* ===== SERVICES PREVIEW ===== */
+.services-section{padding:4rem 2rem;background:var(--dark);}
+.services-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:rgba(255,255,255,0.04);margin-top:2.5rem;border-radius:10px;overflow:hidden;}
+.svc-item{
+  background:var(--dark2);padding:2rem 1.5rem;
+  transition:all 0.25s;cursor:pointer;
+  position:relative;overflow:hidden;
+}
+.svc-item::after{content:'';position:absolute;bottom:0;left:0;width:0;height:2px;background:var(--orange);transition:width 0.35s;}
+.svc-item:hover::after{width:100%;}
+.svc-item:hover{background:var(--dark3);}
+.svc-popular{
+  position:absolute;top:1rem;right:1rem;
+  background:var(--orange);color:var(--white);
+  font-size:0.58rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;
+  padding:0.2rem 0.5rem;border-radius:2px;
+}
+.svc-num{font-family:'DM Mono',monospace;font-size:0.65rem;color:var(--muted);letter-spacing:2px;margin-bottom:1rem;}
+.svc-icon{font-size:1.7rem;margin-bottom:0.8rem;}
+.svc-name{font-size:0.95rem;font-weight:700;color:var(--cream);margin-bottom:0.4rem;}
+.svc-desc{font-size:0.78rem;color:var(--muted);line-height:1.6;}
+.svc-price{margin-top:1rem;}
+.svc-amount{font-family:'Fraunces',serif;font-size:1.5rem;font-weight:900;color:var(--orange);}
+.svc-delay{font-size:0.7rem;color:var(--muted);margin-top:0.2rem;font-family:'DM Mono',monospace;}
+
+/* ===== PORTFOLIO PREVIEW ===== */
+.portfolio-section{padding:4rem 2rem;background:var(--dark2);}
+.portfolio-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.5rem;}
+.pf-card{
+  border-radius:10px;overflow:hidden;
+  background:var(--dark3);border:1px solid rgba(255,255,255,0.05);
+  transition:all 0.25s;cursor:pointer;
+}
+.pf-card:hover{transform:translateY(-4px);border-color:rgba(232,96,10,0.2);}
+.pf-thumb{
+  height:160px;position:relative;
+  display:flex;align-items:center;justify-content:center;
+}
+.pf-mock{
+  width:80%;height:115px;border-radius:6px;
+  background:var(--dark4);border:1px solid rgba(255,255,255,0.06);
+  overflow:hidden;
+}
+.pf-mock-bar{
+  height:18px;background:rgba(0,0,0,0.25);
+  display:flex;align-items:center;padding:0 6px;gap:3px;
+}
+.pf-mock-dot{width:5px;height:5px;border-radius:50%;}
+.pf-mock-body{padding:7px;display:flex;flex-direction:column;gap:4px;}
+.pf-mock-line{height:4px;border-radius:3px;background:rgba(255,255,255,0.07);}
+.pf-thumb-overlay{
+  position:absolute;inset:0;
+  background:rgba(232,96,10,0.88);
+  display:flex;align-items:center;justify-content:center;
+  opacity:0;transition:opacity 0.25s;
+  font-size:0.82rem;font-weight:700;color:white;
+}
+.pf-card:hover .pf-thumb-overlay{opacity:1;}
+.pf-body{padding:1.2rem;}
+.pf-sector{font-size:0.65rem;letter-spacing:2px;text-transform:uppercase;color:var(--orange);font-weight:600;margin-bottom:0.3rem;}
+.pf-name{font-size:0.9rem;font-weight:700;color:var(--cream);margin-bottom:0.3rem;}
+.pf-result{
+  display:inline-flex;align-items:center;gap:0.35rem;
+  font-size:0.72rem;color:#4ade80;font-weight:600;
+  background:rgba(29,185,84,0.07);border:1px solid rgba(29,185,84,0.15);
+  border-radius:4px;padding:0.2rem 0.5rem;margin-top:0.4rem;
+}
+
+/* ===== CTA CENTRAL ===== */
+.cta-mid{
+  margin:0 2rem;
+  background:linear-gradient(135deg,rgba(232,96,10,0.14),rgba(20,18,16,0.98));
+  border:1px solid rgba(232,96,10,0.28);
+  border-radius:12px;padding:2.5rem 2rem;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:2rem;flex-wrap:wrap;
+  position:relative;overflow:hidden;
+}
+.cta-mid::before{
+  content:'';position:absolute;top:-60px;left:-60px;
+  width:220px;height:220px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,96,10,0.12),transparent 70%);
+  pointer-events:none;
+}
+.cta-mid-text{position:relative;z-index:1;}
+.cta-mid-title{
+  font-family:'Fraunces',serif;
+  font-size:clamp(1.3rem,3vw,1.9rem);font-weight:900;
+  color:var(--cream);letter-spacing:-0.5px;line-height:1.1;
+  margin-bottom:0.4rem;
+}
+.cta-mid-title em{color:var(--orange);font-style:italic;}
+.cta-mid-sub{font-size:0.82rem;color:var(--muted);}
+.cta-mid-action{position:relative;z-index:1;flex-shrink:0;}
+.cta-mid-note{font-size:0.72rem;color:var(--muted);text-align:center;margin-top:0.5rem;}
+
+/* ===== FAQ ===== */
+.faq-section{padding:4rem 2rem;background:var(--dark);}
+.faq-list{display:flex;flex-direction:column;gap:0.6rem;margin-top:2.5rem;max-width:700px;}
+.faq-item{
+  background:var(--dark2);border-radius:8px;
+  border:1px solid rgba(255,255,255,0.05);
+  overflow:hidden;cursor:pointer;
+  transition:border-color 0.2s;
+}
+.faq-item.open{border-color:rgba(232,96,10,0.2);}
+.faq-q{
+  padding:1.1rem 1.3rem;
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:0.9rem;font-weight:700;color:var(--cream);
+  gap:1rem;
+}
+.faq-icon{
+  width:22px;height:22px;border-radius:50%;
+  background:rgba(232,96,10,0.1);
+  display:flex;align-items:center;justify-content:center;
+  font-size:0.85rem;color:var(--orange);flex-shrink:0;
+  transition:transform 0.25s;
+}
+.faq-item.open .faq-icon{transform:rotate(45deg);}
+.faq-a{
+  padding:0 1.3rem 1.1rem;
+  font-size:0.83rem;color:var(--muted);line-height:1.7;
+  display:none;
+}
+.faq-item.open .faq-a{display:block;}
+
+/* ===== GUIDE GRATUIT ===== */
+.free-section{
+  margin:0 2rem 4rem;border-radius:12px;
+  background:linear-gradient(135deg,rgba(232,96,10,0.12) 0%,rgba(20,18,16,0.98) 55%);
+  border:1px solid rgba(232,96,10,0.28);
+  padding:2.5rem 2rem;
+  display:grid;grid-template-columns:1fr auto;
+  align-items:center;gap:2.5rem;
+  position:relative;overflow:hidden;
+}
+.free-section::before{
+  content:'';position:absolute;top:-50px;left:-50px;
+  width:200px;height:200px;border-radius:50%;
+  background:radial-gradient(circle,rgba(232,96,10,0.12),transparent 70%);
+  pointer-events:none;
+}
+.free-badge{
+  display:inline-block;background:var(--orange);color:var(--white);
+  font-size:0.65rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;
+  padding:0.25rem 0.7rem;border-radius:2px;margin-bottom:0.8rem;
+}
+.free-title{
+  font-family:'Fraunces',serif;
+  font-size:1.4rem;font-weight:900;color:var(--cream);
+  letter-spacing:-0.5px;line-height:1.15;margin-bottom:1rem;
+}
+.free-title em{color:var(--orange);font-style:italic;}
+.free-checklist{list-style:none;display:flex;flex-direction:column;gap:0.4rem;}
+.free-checklist li{
+  font-size:0.8rem;color:var(--muted);
+  display:flex;align-items:flex-start;gap:0.5rem;
+}
+.free-checklist li::before{content:'✓';color:var(--orange);font-weight:700;flex-shrink:0;margin-top:0.05rem;}
+.free-right{display:flex;flex-direction:column;align-items:center;gap:0.5rem;position:relative;z-index:1;}
+.free-btn{
+  display:block;background:var(--orange);color:var(--white);
+  padding:0.9rem 1.5rem;border-radius:6px;
+  font-weight:800;font-size:0.88rem;
+  text-decoration:none;white-space:nowrap;
+  transition:all 0.2s;text-align:center;
+}
+.free-btn:hover{background:var(--orange2);transform:translateY(-2px);}
+.free-sub{font-size:0.7rem;color:var(--muted);text-align:center;}
+
+/* ===== CTA FINAL BAND ===== */
+.cta-band{
+  background:var(--orange);
+  padding:2.5rem 2rem;
+  display:flex;justify-content:space-between;align-items:center;
+  gap:2rem;flex-wrap:wrap;position:relative;overflow:hidden;
+}
+.cta-band::before{
+  content:'';position:absolute;inset:0;
+  background:rgba(255,255,255,0.04);
+  pointer-events:none;
+}
+.cta-band-text{position:relative;z-index:1;}
+.cta-band-title{
+  font-family:'Fraunces',serif;
+  font-size:clamp(1.2rem,3vw,1.7rem);font-weight:900;
+  color:var(--white);letter-spacing:-0.5px;line-height:1.1;
+}
+.cta-band-sub{font-size:0.82rem;color:rgba(255,255,255,0.78);margin-top:0.3rem;}
+.btn-white{
+  background:var(--white);color:var(--orange);
+  padding:1rem 2rem;border-radius:6px;
+  font-weight:800;font-size:0.9rem;
+  border:none;cursor:pointer;white-space:nowrap;
+  font-family:'Cabinet Grotesk',sans-serif;
+  transition:all 0.2s;position:relative;z-index:1;
+  text-decoration:none;display:inline-block;
+  min-height:48px;display:inline-flex;align-items:center;
+}
+.btn-white:hover{background:var(--cream);transform:translateY(-1px);}
+
+/* ===== PAGE SERVICES ===== */
+#page-services{padding:4rem 2rem;}
+.page-hero{
+  text-align:center;padding:3rem 1rem;
+  border-bottom:1px solid rgba(255,255,255,0.05);
+  margin-bottom:3rem;
+}
+.page-tag{
+  font-family:'DM Mono',monospace;
+  font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;
+  color:var(--orange);margin-bottom:0.8rem;
+}
+.page-title{
+  font-family:'Fraunces',serif;
+  font-size:clamp(2.2rem,5vw,4rem);font-weight:900;
+  color:var(--cream);letter-spacing:-2px;line-height:1;
+}
+.page-title em{color:var(--orange);font-style:italic;}
+.page-sub{font-size:0.9rem;color:var(--muted);margin-top:0.8rem;line-height:1.7;max-width:480px;margin-left:auto;margin-right:auto;}
+.services-full{display:flex;flex-direction:column;gap:1px;background:rgba(255,255,255,0.04);border-radius:10px;overflow:hidden;}
+.service-row{
+  background:var(--dark2);
+  display:grid;grid-template-columns:80px 1fr auto;
+  align-items:center;gap:1.5rem;padding:1.8rem;
+  transition:all 0.25s;cursor:pointer;
+  border-left:3px solid transparent;
+  position:relative;
+}
+.service-row:hover{background:var(--dark3);border-left-color:var(--orange);}
+.sr-num{font-family:'DM Mono',monospace;font-size:0.72rem;color:var(--muted);letter-spacing:2px;}
+.sr-icon{font-size:1.8rem;margin-bottom:0.5rem;}
+.sr-title{font-size:1rem;font-weight:700;color:var(--cream);margin-bottom:0.3rem;}
+.sr-desc{font-size:0.82rem;color:var(--muted);line-height:1.6;}
+.sr-tags{display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:0.6rem;}
+.sr-tag{font-size:0.65rem;padding:0.2rem 0.5rem;border-radius:2px;background:rgba(232,96,10,0.08);color:var(--orange);font-family:'DM Mono',monospace;letter-spacing:1px;}
+.sr-price{font-family:'Fraunces',serif;font-size:1.4rem;font-weight:900;color:var(--orange);white-space:nowrap;text-align:right;}
+.sr-period{font-size:0.7rem;color:var(--muted);margin-top:0.2rem;text-align:right;font-family:'DM Mono',monospace;}
+.sr-popular{position:absolute;top:0.8rem;right:0.8rem;background:var(--orange);color:var(--white);font-size:0.58rem;font-weight:800;letter-spacing:1.5px;text-transform:uppercase;padding:0.2rem 0.5rem;border-radius:2px;}
+
+.process-section-full{
+  margin-top:3.5rem;padding:3rem 2rem;
+  background:var(--dark2);border-radius:12px;
+}
+.process-title{font-family:'Fraunces',serif;font-size:1.8rem;font-weight:900;color:var(--cream);letter-spacing:-1px;margin-bottom:0.4rem;}
+.process-sub{font-size:0.85rem;color:var(--muted);margin-bottom:2.5rem;}
+.process-steps{display:grid;grid-template-columns:repeat(4,1fr);gap:1.2rem;}
+.ps{padding:1.3rem;background:var(--dark3);border-radius:8px;border:1px solid rgba(255,255,255,0.04);}
+.ps-num{font-family:'Fraunces',serif;font-size:2rem;font-weight:900;color:rgba(232,96,10,0.18);line-height:1;margin-bottom:0.8rem;}
+.ps-title{font-size:0.88rem;font-weight:700;color:var(--cream);margin-bottom:0.3rem;}
+.ps-desc{font-size:0.78rem;color:var(--muted);line-height:1.6;}
+
+/* ===== PAGE PORTFOLIO ===== */
+#page-portfolio{padding:4rem 2rem;}
+.portfolio-grid-full{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.5rem;}
+.pfc-card{border-radius:10px;overflow:hidden;background:var(--dark2);border:1px solid rgba(255,255,255,0.05);transition:all 0.25s;cursor:pointer;}
+.pfc-card:hover{transform:translateY(-4px);border-color:rgba(232,96,10,0.2);}
+.pfc-thumb{height:190px;position:relative;background:var(--dark3);display:flex;align-items:center;justify-content:center;}
+.pfc-overlay{position:absolute;inset:0;background:rgba(232,96,10,0.88);display:flex;align-items:center;justify-content:center;opacity:0;transition:opacity 0.25s;flex-direction:column;gap:0.4rem;}
+.pfc-card:hover .pfc-overlay{opacity:1;}
+.pfc-overlay span{font-size:0.82rem;font-weight:700;color:white;}
+.pfc-body{padding:1.3rem;}
+.pfc-sector{font-size:0.63rem;letter-spacing:2px;text-transform:uppercase;color:var(--orange);font-weight:600;margin-bottom:0.3rem;}
+.pfc-name{font-size:0.95rem;font-weight:700;color:var(--cream);margin-bottom:0.3rem;}
+.pfc-context{font-size:0.78rem;color:var(--muted);line-height:1.6;margin-bottom:0.5rem;}
+.pfc-result{display:inline-flex;align-items:center;gap:0.35rem;font-size:0.72rem;color:#4ade80;font-weight:600;background:rgba(29,185,84,0.07);border:1px solid rgba(29,185,84,0.15);border-radius:4px;padding:0.2rem 0.5rem;}
+.pfc-tags{display:flex;gap:0.4rem;flex-wrap:wrap;margin-top:0.6rem;}
+.pfc-pill{font-size:0.63rem;padding:0.2rem 0.5rem;border-radius:10px;background:rgba(232,96,10,0.07);color:var(--orange);font-family:'DM Mono',monospace;}
+
+.pf-soon{background:var(--dark3);display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;min-height:280px;border:2px dashed rgba(232,96,10,0.2);border-radius:10px;text-align:center;padding:2rem;cursor:pointer;}
+.pf-soon:hover{border-color:rgba(232,96,10,0.4);}
+.pf-soon-icon{font-size:2.2rem;margin-bottom:0.8rem;}
+.pf-soon-text{font-size:0.85rem;font-weight:700;color:var(--cream);}
+.pf-soon-sub{font-size:0.76rem;color:var(--muted);margin-top:0.3rem;}
+
+/* ===== PAGE CONTACT ===== */
+#page-contact{padding:4rem 2rem;}
+.contact-layout{display:grid;grid-template-columns:1fr 1.1fr;gap:3.5rem;margin-top:2.5rem;}
+.contact-info-title{font-family:'Fraunces',serif;font-size:1.7rem;font-weight:900;color:var(--cream);letter-spacing:-1px;line-height:1.1;margin-bottom:0.8rem;}
+.contact-info-title em{color:var(--orange);font-style:italic;}
+.contact-info-desc{font-size:0.85rem;color:var(--muted);line-height:1.75;margin-bottom:1.5rem;}
+.contact-items{display:flex;flex-direction:column;gap:0.6rem;}
+.contact-item{display:flex;align-items:center;gap:0.8rem;padding:0.9rem 1rem;background:var(--dark2);border-radius:8px;border:1px solid rgba(255,255,255,0.04);transition:all 0.2s;text-decoration:none;cursor:pointer;}
+.contact-item:hover{border-color:rgba(232,96,10,0.2);}
+.contact-item-icon{font-size:1.3rem;flex-shrink:0;}
+.contact-item-label{font-size:0.68rem;color:var(--muted);letter-spacing:0.5px;text-transform:uppercase;font-family:'DM Mono',monospace;}
+.contact-item-val{font-size:0.88rem;font-weight:700;color:var(--cream);margin-top:0.1rem;}
+.contact-form-area{background:var(--dark2);border-radius:12px;padding:2rem;border:1px solid rgba(255,255,255,0.05);}
+.form-title{font-family:'Fraunces',serif;font-size:1.4rem;font-weight:900;color:var(--cream);letter-spacing:-0.5px;margin-bottom:0.3rem;}
+.form-sub{font-size:0.8rem;color:var(--muted);margin-bottom:1.5rem;line-height:1.6;}
+.form-group{margin-bottom:1rem;}
+.form-label{font-size:0.75rem;font-weight:700;color:var(--text);letter-spacing:0.5px;display:block;margin-bottom:0.4rem;}
+.form-input{width:100%;background:var(--dark3);border:1px solid rgba(255,255,255,0.07);border-radius:6px;padding:0.8rem 0.9rem;color:var(--cream);font-family:'Cabinet Grotesk',sans-serif;font-size:0.88rem;outline:none;transition:border-color 0.2s;resize:vertical;}
+.form-input:focus{border-color:rgba(232,96,10,0.4);}
+.form-input::placeholder{color:var(--muted);}
+textarea.form-input{min-height:100px;}
+.form-select{width:100%;background:var(--dark3);border:1px solid rgba(255,255,255,0.07);border-radius:6px;padding:0.8rem 0.9rem;color:var(--cream);font-family:'Cabinet Grotesk',sans-serif;font-size:0.88rem;outline:none;cursor:pointer;appearance:none;transition:border-color 0.2s;}
+.form-select:focus{border-color:rgba(232,96,10,0.4);}
+.form-select option{background:var(--dark3);color:var(--cream);}
+.form-submit{width:100%;background:var(--orange);color:var(--white);border:none;border-radius:6px;padding:0.95rem;font-weight:700;font-size:0.9rem;cursor:pointer;font-family:'Cabinet Grotesk',sans-serif;transition:all 0.2s;margin-top:0.4rem;display:flex;align-items:center;justify-content:center;gap:0.4rem;min-height:48px;}
+.form-submit:hover{background:var(--orange2);transform:translateY(-1px);}
+
+/* ===== PAGE À PROPOS ===== */
+#page-apropos{padding:4rem 2rem;}
+.about-layout{display:grid;grid-template-columns:1fr 1.4fr;gap:4rem;align-items:start;margin-top:2.5rem;}
+.about-visual{background:var(--dark2);border-radius:12px;border:1px solid rgba(232,96,10,0.1);overflow:hidden;position:sticky;top:80px;}
+.about-avatar-area{height:260px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:1.2rem;background:linear-gradient(135deg,var(--dark3) 0%,rgba(232,96,10,0.06) 100%);position:relative;}
+.about-avatar-area::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at center,rgba(232,96,10,0.1) 0%,transparent 70%);}
+.about-avatar{width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--orange),var(--orange2));display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:2.2rem;font-weight:900;color:var(--white);position:relative;z-index:1;border:3px solid rgba(232,96,10,0.3);}
+.about-name{font-family:'Fraunces',serif;font-size:1.1rem;font-weight:900;color:var(--cream);position:relative;z-index:1;text-align:center;}
+.about-role{font-size:0.7rem;color:var(--orange);font-family:'DM Mono',monospace;letter-spacing:2px;text-transform:uppercase;position:relative;z-index:1;}
+.about-visual-bottom{padding:1.3rem;}
+.about-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:0.8rem;}
+.about-stat{background:var(--dark3);border-radius:6px;padding:0.9rem;text-align:center;}
+.about-stat-num{font-family:'Fraunces',serif;font-size:1.7rem;font-weight:900;color:var(--orange);}
+.about-stat-label{font-size:0.68rem;color:var(--muted);margin-top:0.2rem;}
+.about-tag{font-family:'DM Mono',monospace;font-size:0.68rem;letter-spacing:3px;text-transform:uppercase;color:var(--orange);margin-bottom:0.8rem;}
+.about-title{font-family:'Fraunces',serif;font-size:2.2rem;font-weight:900;color:var(--cream);letter-spacing:-1.5px;line-height:1.05;margin-bottom:1.2rem;}
+.about-title em{color:var(--orange);font-style:italic;}
+.about-text{font-size:0.88rem;color:var(--muted);line-height:1.85;margin-bottom:1.2rem;}
+.values-list{margin-top:2rem;display:flex;flex-direction:column;gap:0.8rem;}
+.value{display:flex;gap:0.8rem;align-items:flex-start;padding:1rem 1.1rem;background:var(--dark2);border-radius:8px;border-left:3px solid var(--orange);transition:background 0.2s;}
+.value:hover{background:var(--dark3);}
+.value-icon{font-size:1.1rem;flex-shrink:0;margin-top:0.1rem;}
+.value-title{font-size:0.85rem;font-weight:700;color:var(--cream);margin-bottom:0.15rem;}
+.value-desc{font-size:0.76rem;color:var(--muted);line-height:1.6;}
+
+/* ===== FOOTER ===== */
+footer{
+  background:var(--dark2);
+  border-top:1px solid rgba(255,255,255,0.05);
+  padding:2rem;
+  display:flex;justify-content:space-between;align-items:center;
+  flex-wrap:wrap;gap:1.2rem;
+}
+.footer-logo{font-family:'Fraunces',serif;font-size:1.2rem;font-weight:900;color:var(--cream);}
+.footer-logo span{color:var(--orange);}
+.footer-links{display:flex;gap:1.5rem;flex-wrap:wrap;}
+.footer-link{color:var(--muted);font-size:0.8rem;cursor:pointer;transition:color 0.2s;}
+.footer-link:hover{color:var(--orange);}
+.footer-copy{font-size:0.74rem;color:var(--muted);}
+
+/* ===== SCROLL REVEAL ===== */
+.reveal{opacity:0;transform:translateY(20px);transition:all 0.6s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+
+/* ===== TOAST ===== */
+.toast{position:fixed;bottom:2rem;left:50%;transform:translateX(-50%) translateY(30px);z-index:9999;background:var(--dark3);color:var(--cream);border:1px solid rgba(232,96,10,0.3);padding:0.8rem 1.5rem;border-radius:8px;font-weight:600;font-size:0.82rem;opacity:0;transition:all 0.3s;pointer-events:none;white-space:nowrap;}
+.toast.show{transform:translateX(-50%) translateY(0);opacity:1;}
+
+/* ===== SEE ALL LINK ===== */
+.see-all{font-size:0.8rem;color:var(--orange);cursor:pointer;display:inline-flex;align-items:center;gap:0.35rem;font-weight:600;transition:gap 0.2s;}
+.see-all:hover{gap:0.7rem;}
+.sp-header{display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:1rem;margin-bottom:0;}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:1024px){
+  .testi-grid{grid-template-columns:1fr 1fr;}
+  .pm-steps{grid-template-columns:1fr 1fr;}
+  .free-section{grid-template-columns:1fr;}
+  .free-right{text-align:left;align-items:flex-start;}
+  .portfolio-grid-full,.portfolio-grid{grid-template-columns:1fr 1fr;}
+  .process-steps{grid-template-columns:1fr 1fr;}
+}
+@media(max-width:900px){
+  nav{padding:0 1.2rem;}
+  .nav-menu{display:none;}
+  .hamburger{display:flex;}
+  .nav-menu.open{
+    display:flex;flex-direction:column;
+    position:fixed;top:64px;left:0;right:0;
+    background:var(--dark2);padding:1.2rem;
+    border-bottom:1px solid rgba(232,96,10,0.1);
+    gap:0.2rem;z-index:999;
+  }
+  .nav-btn{text-align:left;padding:0.6rem 1rem;}
+  .hero{padding:2.5rem 1.2rem 2rem;min-height:auto;}
+  .gains-section,.testi-section,.process-section,.services-section,.portfolio-section,.faq-section{padding:3rem 1.2rem;}
+  .gains-grid,.services-grid,.portfolio-grid,.portfolio-grid-full,.portfolio-grid-full,.process-steps,.pm-steps{grid-template-columns:1fr;}
+  .testi-grid{grid-template-columns:1fr;}
+  .free-section{margin:0 1.2rem;padding:2rem 1.5rem;grid-template-columns:1fr;}
+  .cta-mid{margin:0 1.2rem;flex-direction:column;text-align:center;}
+  .garantie-band{margin:0 1.2rem;flex-direction:column;gap:1rem;}
+  .garantie-items{flex-direction:column;gap:0.5rem;}
+  .cta-band{flex-direction:column;text-align:center;padding:2rem 1.5rem;}
+  .contact-layout,.about-layout{grid-template-columns:1fr;gap:2rem;}
+  .about-visual{position:static;}
+  .service-row{grid-template-columns:1fr;gap:0.6rem;}
+  .sr-price{text-align:left;}
+  .wa-float{bottom:1.2rem;right:1.2rem;}
+  .hero-actions{gap:0.7rem;}
+  .btn-primary,.btn-secondary{width:100%;justify-content:center;}
+  .hero-reassurance{gap:1rem;}
+}
+@media(max-width:480px){
+  h1.hero-h1{font-size:2.5rem;}
+  .hero-price-line{font-size:1.4rem;}
+  .sec-title{font-size:1.6rem;}
+  .gains-grid{grid-template-columns:1fr 1fr;}
+  footer{flex-direction:column;align-items:flex-start;gap:1rem;}
+  .footer-links{gap:1rem;}
+}
+</style>
+</head>
+<body>
+
+<div class="toast" id="toast"></div>
+
+<!-- WHATSAPP FLOTTANT (droite) -->
+<a class="wa-float" href="https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20une%20page%20web%20pour%20mon%20business%20%F0%9F%99%8F" target="_blank" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.127.558 4.121 1.532 5.849L.057 23.25a.75.75 0 0 0 .918.919l5.451-1.476A11.943 11.943 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.717 9.717 0 0 1-4.953-1.355l-.355-.211-3.676.995.994-3.595-.232-.371A9.718 9.718 0 0 1 2.25 12C2.25 6.615 6.615 2.25 12 2.25S21.75 6.615 21.75 12 17.385 21.75 12 21.75z"/></svg>
+</a>
+
+<!-- NAV -->
+<nav>
+  <div class="logo" onclick="showPage('accueil')">TOGO<span>TEK</span></div>
+  <ul class="nav-menu" id="navMenu">
+    <li><button class="nav-btn active" onclick="showPage('accueil')">Accueil</button></li>
+    <li><button class="nav-btn" onclick="showPage('services')">Services & Tarifs</button></li>
+    <li><button class="nav-btn" onclick="showPage('portfolio')">Portfolio</button></li>
+    <li><button class="nav-btn" onclick="showPage('apropos')">À propos</button></li>
+    <li><a class="nav-cta" href="https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20un%20devis%20gratuit%20%F0%9F%99%8F" target="_blank">📲 Devis gratuit</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ============================================================
+     PAGE ACCUEIL
+     ============================================================ -->
+<div id="page-accueil" class="page active">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+
+      <div class="hero-trust-row">
+        <div class="badge-live">
+          <span class="badge-live-dot"></span>
+          Disponible maintenant
+        </div>
+        <div class="badge-local">🇹🇬 Basé à Lomé</div>
+      </div>
+
+      <h1 class="hero-h1">
+        Plus de clients.<br>
+        Dès <em>5 000 F.</em>
+      </h1>
+      <div class="hero-price-line">
+        Votre page web pro livrée en <strong>24h chrono.</strong>
+      </div>
+
+      <p class="hero-sub">
+        Les clients cherchent votre numéro en ligne. Avec une page pro, ils vous trouvent <strong>et vous contactent directement sur WhatsApp.</strong> Vous payez uniquement après avoir validé le résultat.
+      </p>
+
+      <div class="hero-actions">
+        <a class="btn-primary" href="https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20une%20page%20web%20pour%20mon%20business%20%F0%9F%99%8F" target="_blank">
+          📲 Écrire sur WhatsApp
+        </a>
+        <button class="btn-secondary" onclick="showPage('portfolio')">
+          Voir les exemples →
+        </button>
+      </div>
+
+      <div class="hero-reassurance">
+        <div class="reassure-item"><span class="check">✓</span> Livraison en 24h</div>
+        <div class="reassure-item"><span class="check">✓</span> Paiement après validation</div>
+        <div class="reassure-item"><span class="check">✓</span> Flooz & T-Money acceptés</div>
+        <div class="reassure-item"><span class="check">✓</span> Modifications gratuites</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker">
+    <div class="ticker-inner">
+      <div class="ticker-item">Sites Web Pro <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">Livraison en 24h <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">CV Professionnels <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">Paiement après validation <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">Boutiques en ligne <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">Flooz · T-Money · Cash <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">Visuels Facebook &amp; Instagram <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">100% Local · Lomé 🇹🇬 <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">Sites Web Pro <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">Livraison en 24h <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">CV Professionnels <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">Paiement après validation <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">Boutiques en ligne <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">Flooz · T-Money · Cash <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">Visuels Facebook &amp; Instagram <span class="ticker-sep">✦</span></div>
+      <div class="ticker-item">100% Local · Lomé 🇹🇬 <span class="ticker-sep">✦</span></div>
+    </div>
+  </div>
+
+  <!-- CE QUE ÇA CHANGE VRAIMENT -->
+  <section class="gains-section">
+    <div class="sp-header">
+      <div>
+        <div class="sec-label">Pourquoi c'est important</div>
+        <div class="sec-title">Ce que ça <em>change</em> pour vous</div>
+      </div>
+    </div>
+    <div class="gains-grid" style="margin-top:2rem;">
+      <div class="gain-card reveal">
+        <div class="gain-icon">📲</div>
+        <div class="gain-title">Plus de messages WhatsApp</div>
+        <div class="gain-desc">Votre page a un bouton WhatsApp bien visible. Vos clients cliquent, vous écrivent directement. Fini les "comment je te contacte ?"</div>
+      </div>
+      <div class="gain-card reveal">
+        <div class="gain-icon">🔍</div>
+        <div class="gain-title">Trouvable sur Google</div>
+        <div class="gain-desc">Quand quelqu'un cherche votre restaurant, votre salon ou votre boutique à Lomé, votre nom apparaît. Sans page, vous êtes invisible.</div>
+      </div>
+      <div class="gain-card reveal">
+        <div class="gain-icon">💼</div>
+        <div class="gain-title">Crédibilité immédiate</div>
+        <div class="gain-desc">Un client qui voit une vraie page professionnelle vous fait plus confiance. Il hésite moins à commander ou à vous contacter.</div>
+      </div>
+      <div class="gain-card reveal">
+        <div class="gain-icon">🌙</div>
+        <div class="gain-title">Commandes même la nuit</div>
+        <div class="gain-desc">Votre page travaille 24h/24 pendant que vous dormez. Des clients découvrent votre business et vous écrivent. Vous répondez le matin.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TÉMOIGNAGES -->
+  <section class="testi-section">
+    <div class="sp-header">
+      <div>
+        <div class="sec-label">Avis clients</div>
+        <div class="sec-title">Ce qu'ils en <em>pensent</em></div>
+      </div>
+    </div>
+    <div class="testi-grid" style="margin-top:2rem;">
+
+      <div class="testi-card reveal">
+        <div class="testi-service-tag">Page web · 5 000 FCFA</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">J'avais peur que ce soit compliqué mais franchement c'était simple. En 24h ma boutique était en ligne. Mes clientes partagent la page dans les groupes WhatsApp. J'ai reçu 4 nouvelles commandes la première semaine.</p>
+        <div class="testi-footer">
+          <div class="testi-avatar">AF</div>
+          <div>
+            <div class="testi-name">Afi Mensah</div>
+            <div class="testi-biz">Boutique Afi Mode · Bè Kpota</div>
+          </div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-service-tag">Site multi-pages · 15 000 FCFA</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">Avant les gens me demandaient tout le temps comment me contacter. Maintenant je leur envoie juste le lien. Mes patients trouvent les horaires, l'adresse et le numéro directement. Ça a changé beaucoup de chose.</p>
+        <div class="testi-footer">
+          <div class="testi-avatar">KA</div>
+          <div>
+            <div class="testi-name">Kossi Agbeko</div>
+            <div class="testi-biz">Cabinet médical · Tokoin</div>
+          </div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+
+      <div class="testi-card reveal">
+        <div class="testi-service-tag">Boutique en ligne · 25 000 FCFA</div>
+        <div class="testi-quote">"</div>
+        <p class="testi-text">J'ai eu 3 commandes le premier jour. Franchement j'aurais pas cru que ça marcherait aussi vite. Depuis la page les clients trouvent facilement mon WhatsApp. TOGOTEK a bien fait le travail.</p>
+        <div class="testi-footer">
+          <div class="testi-avatar">KD</div>
+          <div>
+            <div class="testi-name">Kafui Djoumessi</div>
+            <div class="testi-biz">Resto Kpodji · Adidogomé</div>
+          </div>
+          <div class="testi-stars">★★★★★</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- COMMENT ÇA MARCHE -->
+  <section class="process-section">
+    <div class="sp-header">
+      <div>
+        <div class="sec-label">Processus</div>
+        <div class="sec-title">Aussi simple <em>que ça</em></div>
+      </div>
+    </div>
+    <div class="pm-steps" style="margin-top:2rem;">
+      <div class="pm-step reveal">
+        <div class="pm-num">01</div>
+        <div class="pm-title">Vous m'envoyez vos infos</div>
+        <div class="pm-desc">Un simple message WhatsApp avec le nom de votre business et votre activité. C'est tout. Je m'occupe du reste.</div>
+      </div>
+      <div class="pm-step reveal">
+        <div class="pm-num">02</div>
+        <div class="pm-title">Je crée en 24h</div>
+        <div class="pm-desc">Je réalise votre page et vous envoie un aperçu complet directement sur WhatsApp pour validation.</div>
+      </div>
+      <div class="pm-step reveal">
+        <div class="pm-num">03</div>
+        <div class="pm-title">Vous demandez des retouches</div>
+        <div class="pm-desc">Modifications gratuites et illimitées jusqu'à ce que vous soyez 100% satisfait. Aucune restriction.</div>
+      </div>
+      <div class="pm-step reveal">
+        <div class="pm-num">04</div>
+        <div class="pm-title">Vous validez et payez</div>
+        <div class="pm-desc">Paiement Flooz, T-Money ou cash uniquement quand vous êtes content. Votre site est livré immédiatement.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GARANTIE BANDE -->
+  <div class="garantie-band reveal">
+    <div class="garantie-icon">🛡️</div>
+    <div style="flex:1;">
+      <div class="garantie-title">Garantie Zéro Risque</div>
+      <div class="garantie-items">
+        <div class="garantie-item"><span class="g-check">✓</span> Vous voyez le résultat AVANT de payer</div>
+        <div class="garantie-item"><span class="g-check">✓</span> Modifications gratuites jusqu'à satisfaction totale</div>
+        <div class="garantie-item"><span class="g-check">✓</span> Paiement Flooz, T-Money ou cash</div>
+        <div class="garantie-item"><span class="g-check">✓</span> Réponse WhatsApp en moins de 15 min</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height:1rem;background:var(--dark2);"></div>
+
+  <!-- SERVICES PREVIEW -->
+  <section class="services-section">
+    <div class="sp-header" style="margin-bottom:0;">
+      <div>
+        <div class="sec-label">Tarifs</div>
+        <div class="sec-title">Mes <em>services</em></div>
+      </div>
+      <div class="see-all" onclick="showPage('services')">Voir tous les tarifs →</div>
+    </div>
+    <div class="services-grid reveal">
+      <div class="svc-item" onclick="showPage('services')">
+        <div class="svc-num">01 — PAGE WEB</div>
+        <div class="svc-icon">🌐</div>
+        <div class="svc-name">Page de présentation</div>
+        <div class="svc-desc">Design pro, bouton WhatsApp intégré, vos services et horaires. Visible mobile et PC. Idéal pour débuter en ligne.</div>
+        <div class="svc-price">
+          <div class="svc-amount">5 000 FCFA</div>
+          <div class="svc-delay">⚡ Livraison 24h</div>
+        </div>
+      </div>
+      <div class="svc-item" onclick="showPage('services')" style="position:relative;">
+        <div class="svc-popular">⭐ Le + demandé</div>
+        <div class="svc-num">02 — SITE COMPLET</div>
+        <div class="svc-icon">🏪</div>
+        <div class="svc-name">Site multi-pages</div>
+        <div class="svc-desc">Accueil, Services, À propos, Contact. Navigation fluide. Parfait pour cliniques, hôtels, restaurants et agences.</div>
+        <div class="svc-price">
+          <div class="svc-amount">15 000 FCFA</div>
+          <div class="svc-delay">⚡ Livraison 48h</div>
+        </div>
+      </div>
+      <div class="svc-item" onclick="showPage('services')">
+        <div class="svc-num">03 — DOCUMENTS</div>
+        <div class="svc-icon">📄</div>
+        <div class="svc-name">CV & Visuels réseaux</div>
+        <div class="svc-desc">CV pro PDF livré en 6h. Posts Facebook, stories Instagram. Prêts à envoyer avec votre logo et vos couleurs.</div>
+        <div class="svc-price">
+          <div class="svc-amount">dès 1 000 FCFA</div>
+          <div class="svc-delay">⚡ Livraison 1–6h</div>
+        </div>
+      </div>
+    </div>
+    <div style="margin-top:1.5rem;text-align:center;">
+      <a class="btn-primary" href="https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20démarrer%20un%20projet%20%F0%9F%99%8F" target="_blank" style="display:inline-flex;">
+        📲 Démarrer mon projet maintenant
+      </a>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO PREVIEW -->
+  <section class="portfolio-section">
+    <div class="sp-header" style="margin-bottom:0;">
+      <div>
+        <div class="sec-label">Réalisations</div>
+        <div class="sec-title">Mes <em>derniers projets</em></div>
+      </div>
+      <div class="see-all" onclick="showPage('portfolio')">Tout voir →</div>
+    </div>
+    <div class="portfolio-grid reveal" style="margin-top:2rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;">
+
+      <div class="pf-card" onclick="showPage('portfolio')">
+        <div class="pf-thumb" style="background:linear-gradient(135deg,rgba(232,96,10,0.12),rgba(20,15,10,0.95));">
+          <div class="pf-mock">
+            <div class="pf-mock-bar">
+              <div class="pf-mock-dot" style="background:#ff5f57;"></div>
+              <div class="pf-mock-dot" style="background:#febc2e;"></div>
+              <div class="pf-mock-dot" style="background:#28c840;"></div>
+            </div>
+            <div class="pf-mock-body">
+              <div class="pf-mock-line" style="width:65%;background:rgba(232,96,10,0.5);"></div>
+              <div class="pf-mock-line" style="width:90%;"></div>
+              <div class="pf-mock-line" style="width:75%;"></div>
+              <div style="margin-top:6px;display:flex;gap:4px;">
+                <div class="pf-mock-line" style="width:42%;height:18px;border-radius:3px;background:rgba(232,96,10,0.5);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pf-thumb-overlay">Voir le projet →</div>
+        </div>
+        <div class="pf-body">
+          <div class="pf-sector">Restaurant · Lomé</div>
+          <div class="pf-name">TogoFood — Livraison Repas</div>
+          <div class="pf-result">📈 +6 commandes/jour via WhatsApp</div>
+        </div>
+      </div>
+
+      <div class="pf-card" onclick="showPage('portfolio')">
+        <div class="pf-thumb" style="background:linear-gradient(135deg,rgba(50,100,50,0.12),rgba(15,18,15,0.95));">
+          <div class="pf-mock">
+            <div class="pf-mock-bar">
+              <div class="pf-mock-dot" style="background:#ff5f57;"></div>
+              <div class="pf-mock-dot" style="background:#febc2e;"></div>
+              <div class="pf-mock-dot" style="background:#28c840;"></div>
+            </div>
+            <div class="pf-mock-body">
+              <div class="pf-mock-line" style="width:50%;background:rgba(100,180,100,0.5);"></div>
+              <div class="pf-mock-line" style="width:85%;"></div>
+              <div style="margin-top:6px;display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+                <div class="pf-mock-line" style="height:22px;border-radius:3px;background:rgba(255,255,255,0.06);"></div>
+                <div class="pf-mock-line" style="height:22px;border-radius:3px;background:rgba(255,255,255,0.06);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pf-thumb-overlay">Voir le projet →</div>
+        </div>
+        <div class="pf-body">
+          <div class="pf-sector">Coiffure · Bè</div>
+          <div class="pf-name">Salon Adjoa — Beauté & Soins</div>
+          <div class="pf-result">📈 Clients trouvent le numéro directement</div>
+        </div>
+      </div>
+
+      <div class="pf-card" onclick="showPage('portfolio')">
+        <div class="pf-thumb" style="background:linear-gradient(135deg,rgba(100,10,10,0.35),rgba(20,15,15,0.95));">
+          <div class="pf-mock">
+            <div class="pf-mock-bar">
+              <div class="pf-mock-dot" style="background:#ff5f57;"></div>
+              <div class="pf-mock-dot" style="background:#febc2e;"></div>
+              <div class="pf-mock-dot" style="background:#28c840;"></div>
+            </div>
+            <div class="pf-mock-body">
+              <div class="pf-mock-line" style="width:60%;background:rgba(200,160,40,0.5);"></div>
+              <div class="pf-mock-line" style="width:88%;"></div>
+              <div class="pf-mock-line" style="width:70%;"></div>
+              <div style="margin-top:6px;">
+                <div class="pf-mock-line" style="width:48%;height:18px;border-radius:3px;background:rgba(200,160,40,0.4);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pf-thumb-overlay">Voir le projet →</div>
+        </div>
+        <div class="pf-body">
+          <div class="pf-sector">Mode · Adawlato</div>
+          <div class="pf-name">Boutique Mawuli — Mode Importée</div>
+          <div class="pf-result">📈 Catalogue partagé dans les groupes WA</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA MILIEU -->
+  <div class="cta-mid reveal">
+    <div class="cta-mid-text">
+      <div class="cta-mid-title">Votre business mérite<br>une <em>vraie présence en ligne.</em></div>
+      <div class="cta-mid-sub">Réponse WhatsApp en moins de 15 minutes · 7j/7</div>
+    </div>
+    <div class="cta-mid-action">
+      <a class="btn-primary" href="https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20un%20devis%20gratuit%20%F0%9F%99%8F" target="_blank">
+        📲 Obtenir un devis gratuit
+      </a>
+      <div class="cta-mid-note">Paiement après validation · Zéro risque</div>
+    </div>
+  </div>
+
+  <div style="height:3rem;background:var(--dark);"></div>
+
+  <!-- FAQ -->
+  <section class="faq-section">
+    <div>
+      <div class="sec-label">Questions fréquentes</div>
+      <div class="sec-title">Tout ce que vous <em>voulez savoir</em></div>
+    </div>
+    <div class="faq-list" style="margin-top:2rem;">
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          C'est quoi exactement une page web ?
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">C'est votre vitrine en ligne, disponible 24h/24. Quand quelqu'un cherche votre business sur Google ou tape votre nom, il tombe sur votre page avec vos services, votre numéro WhatsApp, vos horaires et vos photos. Il peut vous contacter en un clic.</div>
+      </div>
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          Comment je paie ? Je risque quoi ?
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">Vous ne payez RIEN avant de voir le résultat final. Je crée votre page, je vous l'envoie sur WhatsApp. Vous regardez, vous demandez des modifications si vous voulez, et vous payez seulement quand vous êtes 100% satisfait. Paiement par Flooz (Togocel), T-Money (Moov) ou cash. Zéro risque.</div>
+      </div>
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          Il faut quoi pour démarrer ?
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">Juste un message WhatsApp avec le nom de votre business, votre activité, et éventuellement vos couleurs préférées. Pas besoin de texte rédigé, pas besoin de photos professionnelles. Je m'occupe de tout. Si vous avez des photos ou un logo, c'est un plus — mais pas obligatoire.</div>
+      </div>
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          Et si je veux changer quelque chose après ?
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">Les modifications sont gratuites et illimitées avant le paiement. Après livraison, les petites retouches (texte, numéro, horaires) sont incluses pendant 30 jours. Pour des modifications importantes, on discute du tarif ensemble. En pratique, la plupart des clients valident au premier ou deuxième aperçu.</div>
+      </div>
+
+      <div class="faq-item reveal" onclick="toggleFaq(this)">
+        <div class="faq-q">
+          Mon site sera visible sur Google ?
+          <div class="faq-icon">+</div>
+        </div>
+        <div class="faq-a">Oui. Chaque site est optimisé pour être trouvé quand quelqu'un cherche votre business ou votre type d'activité à Lomé. Ça prend généralement 2 à 4 semaines pour que Google indexe bien votre page — c'est normal pour tout nouveau site.</div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- GUIDE GRATUIT -->
+  <div class="free-section reveal">
+    <div>
+      <div class="free-badge">🎁 RESSOURCE GRATUITE</div>
+      <div class="free-title">5 méthodes pour<br>trouver des clients <em>au Togo</em></div>
+      <ul class="free-checklist">
+        <li>Comment utiliser les groupes WhatsApp pour vendre</li>
+        <li>La technique des photos "avant / après" qui convertissent</li>
+        <li>Trouver vos premiers clients dans votre quartier</li>
+        <li>Créer du bouche-à-oreille digital à Lomé</li>
+        <li>Les erreurs à éviter quand on débute en ligne</li>
+      </ul>
+    </div>
+    <div class="free-right">
+      <a class="free-btn" href="https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20recevoir%20le%20guide%20gratuit%20%F0%9F%99%8F" target="_blank">
+        📲 Recevoir sur WhatsApp
+      </a>
+      <div class="free-sub">Gratuit. Aucun engagement.</div>
+    </div>
+  </div>
+
+  <!-- CTA FINAL -->
+  <div class="cta-band">
+    <div class="cta-band-text">
+      <div class="cta-band-title">Prêt à attirer plus de clients ?</div>
+      <div class="cta-band-sub">Réponse en moins de 15 min · Paiement après validation · Flooz & T-Money</div>
+    </div>
+    <a class="btn-white" href="https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20démarrer%20maintenant%20%F0%9F%99%8F" target="_blank">
+      📲 Écrire sur WhatsApp maintenant
+    </a>
+  </div>
+
+  <footer>
+    <div class="footer-logo">TOGO<span>TEK</span></div>
+    <div class="footer-links">
+      <span class="footer-link" onclick="showPage('accueil')">Accueil</span>
+      <span class="footer-link" onclick="showPage('services')">Services</span>
+      <span class="footer-link" onclick="showPage('portfolio')">Portfolio</span>
+      <span class="footer-link" onclick="showPage('apropos')">À propos</span>
+      <span class="footer-link" onclick="showPage('contact')">Contact</span>
+    </div>
+    <div class="footer-copy">© 2025 TOGOTEK · Lomé 🇹🇬 · +228 97 13 67 97</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+     PAGE SERVICES
+     ============================================================ -->
+<div id="page-services" class="page">
+  <div class="page-hero">
+    <div class="page-tag">Tarifs & Services</div>
+    <div class="page-title">Des prix <em>clairs.</em><br>Zéro surprise.</div>
+    <div class="page-sub">Vous payez après validation. Modifications gratuites. Flooz, T-Money ou cash.</div>
+  </div>
+
+  <div class="services-full">
+
+    <div class="service-row reveal" onclick="window.open('https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20une%20page%20de%20présentation%20%F0%9F%99%8F','_blank')">
+      <div>
+        <div class="sr-num">01</div>
+        <div class="sr-icon">🌐</div>
+      </div>
+      <div>
+        <div class="sr-title">Page de présentation</div>
+        <div class="sr-desc">Une page pro complète pour votre business. Bouton WhatsApp, vos services, horaires, localisation. Visible mobile et PC. Idéal pour démarrer.</div>
+        <div class="sr-tags">
+          <span class="sr-tag">1 page</span>
+          <span class="sr-tag">Bouton WA</span>
+          <span class="sr-tag">Mobile-first</span>
+          <span class="sr-tag">Google-ready</span>
+        </div>
+      </div>
+      <div>
+        <div class="sr-price">5 000 F</div>
+        <div class="sr-period">⚡ Livraison 24h</div>
+      </div>
+    </div>
+
+    <div class="service-row reveal" onclick="window.open('https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20un%20site%20multi-pages%20%F0%9F%99%8F','_blank')" style="position:relative;">
+      <div class="sr-popular">⭐ POPULAIRE</div>
+      <div>
+        <div class="sr-num">02</div>
+        <div class="sr-icon">🏪</div>
+      </div>
+      <div>
+        <div class="sr-title">Site multi-pages complet</div>
+        <div class="sr-desc">Accueil, Services, À propos, Contact. Navigation fluide. Design premium adapté à votre image. Parfait pour cliniques, hôtels, restaurants, agences.</div>
+        <div class="sr-tags">
+          <span class="sr-tag">4+ pages</span>
+          <span class="sr-tag">Navigation</span>
+          <span class="sr-tag">Formulaire</span>
+          <span class="sr-tag">Carte Maps</span>
+        </div>
+      </div>
+      <div>
+        <div class="sr-price">15 000 F</div>
+        <div class="sr-period">⚡ Livraison 48h</div>
+      </div>
+    </div>
+
+    <div class="service-row reveal" onclick="window.open('https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20une%20boutique%20en%20ligne%20%F0%9F%99%8F','_blank')">
+      <div>
+        <div class="sr-num">03</div>
+        <div class="sr-icon">🛒</div>
+      </div>
+      <div>
+        <div class="sr-title">Boutique en ligne</div>
+        <div class="sr-desc">Catalogue produits avec photos et prix. Bouton "Commander sur WhatsApp" intégré. Vos clients commandent 24h/24, même quand vous dormez.</div>
+        <div class="sr-tags">
+          <span class="sr-tag">Catalogue</span>
+          <span class="sr-tag">Commander WA</span>
+          <span class="sr-tag">Photos produits</span>
+          <span class="sr-tag">24h/24</span>
+        </div>
+      </div>
+      <div>
+        <div class="sr-price">25 000 F</div>
+        <div class="sr-period">⚡ Livraison 72h</div>
+      </div>
+    </div>
+
+    <div class="service-row reveal" onclick="window.open('https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20un%20CV%20professionnel%20%F0%9F%99%8F','_blank')">
+      <div>
+        <div class="sr-num">04</div>
+        <div class="sr-icon">📄</div>
+      </div>
+      <div>
+        <div class="sr-title">CV professionnel PDF</div>
+        <div class="sr-desc">Design moderne et soigné, prêt à envoyer sur WhatsApp ou par email. Format PDF haute qualité. Vous vous démarquez des autres candidats.</div>
+        <div class="sr-tags">
+          <span class="sr-tag">PDF HD</span>
+          <span class="sr-tag">Design pro</span>
+          <span class="sr-tag">Prêt à envoyer</span>
+        </div>
+      </div>
+      <div>
+        <div class="sr-price">2 000 F</div>
+        <div class="sr-period">⚡ Livraison 6h</div>
+      </div>
+    </div>
+
+    <div class="service-row reveal" onclick="window.open('https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20une%20brochure%20PDF%20%F0%9F%99%8F','_blank')">
+      <div>
+        <div class="sr-num">05</div>
+        <div class="sr-icon">📋</div>
+      </div>
+      <div>
+        <div class="sr-title">Brochure & Catalogue PDF</div>
+        <div class="sr-desc">Présentation visuelle de vos produits et services à partager dans vos groupes WhatsApp, par email ou à imprimer.</div>
+        <div class="sr-tags">
+          <span class="sr-tag">PDF</span>
+          <span class="sr-tag">Partage WA</span>
+          <span class="sr-tag">Imprimable</span>
+        </div>
+      </div>
+      <div>
+        <div class="sr-price">5 000 F</div>
+        <div class="sr-period">⚡ Livraison 24h</div>
+      </div>
+    </div>
+
+    <div class="service-row reveal" onclick="window.open('https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20des%20visuels%20réseaux%20%F0%9F%99%8F','_blank')">
+      <div>
+        <div class="sr-num">06</div>
+        <div class="sr-icon">🖼️</div>
+      </div>
+      <div>
+        <div class="sr-title">Visuels réseaux sociaux</div>
+        <div class="sr-desc">Posts Facebook, stories Instagram, bannières attractives. Avec votre logo et vos couleurs. Prêts à publier.</div>
+        <div class="sr-tags">
+          <span class="sr-tag">Facebook</span>
+          <span class="sr-tag">Instagram</span>
+          <span class="sr-tag">Stories</span>
+          <span class="sr-tag">Logo inclus</span>
+        </div>
+      </div>
+      <div>
+        <div class="sr-price">1 000 F</div>
+        <div class="sr-period">⚡ Livraison 2h</div>
+      </div>
+    </div>
+
+    <div class="service-row reveal" onclick="window.open('https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20une%20carte%20de%20visite%20%F0%9F%99%8F','_blank')">
+      <div>
+        <div class="sr-num">07</div>
+        <div class="sr-icon">💳</div>
+      </div>
+      <div>
+        <div class="sr-title">Carte de visite digitale</div>
+        <div class="sr-desc">Image à partager sur WhatsApp avec votre nom, poste, contacts et logo. Design professionnel. Envoyez-la en deux secondes à n'importe qui.</div>
+        <div class="sr-tags">
+          <span class="sr-tag">Image WA</span>
+          <span class="sr-tag">Logo</span>
+          <span class="sr-tag">Contacts</span>
+        </div>
+      </div>
+      <div>
+        <div class="sr-price">1 500 F</div>
+        <div class="sr-period">⚡ Livraison 1h</div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="process-section-full reveal">
+    <div class="process-title">Comment commander</div>
+    <div class="process-sub">Simple, rapide, sans risque. En 4 étapes.</div>
+    <div class="process-steps">
+      <div class="ps">
+        <div class="ps-num">01</div>
+        <div class="ps-title">Message WhatsApp</div>
+        <div class="ps-desc">Envoyez le nom de votre business et votre activité. C'est tout ce qu'il faut pour commencer.</div>
+      </div>
+      <div class="ps">
+        <div class="ps-num">02</div>
+        <div class="ps-title">Je crée en 24h</div>
+        <div class="ps-desc">Je travaille sur votre projet et vous envoie un aperçu complet directement sur WhatsApp.</div>
+      </div>
+      <div class="ps">
+        <div class="ps-num">03</div>
+        <div class="ps-title">Vous validez</div>
+        <div class="ps-desc">Modifications gratuites jusqu'à satisfaction totale. Aucune limite de retouches.</div>
+      </div>
+      <div class="ps">
+        <div class="ps-num">04</div>
+        <div class="ps-title">Paiement & livraison</div>
+        <div class="ps-desc">Flooz, T-Money ou cash. Seulement après validation. Fichier livré immédiatement.</div>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:3rem;text-align:center;padding:0 2rem 4rem;">
+    <a class="btn-primary" href="https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20démarrer%20un%20projet%20%F0%9F%99%8F" target="_blank">
+      📲 Démarrer mon projet sur WhatsApp
+    </a>
+  </div>
+
+  <footer>
+    <div class="footer-logo">TOGO<span>TEK</span></div>
+    <div class="footer-links">
+      <span class="footer-link" onclick="showPage('accueil')">Accueil</span>
+      <span class="footer-link" onclick="showPage('portfolio')">Portfolio</span>
+      <span class="footer-link" onclick="showPage('contact')">Contact</span>
+    </div>
+    <div class="footer-copy">© 2025 TOGOTEK · Lomé 🇹🇬</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+     PAGE PORTFOLIO
+     ============================================================ -->
+<div id="page-portfolio" class="page">
+  <div style="padding:4rem 2rem;">
+    <div class="page-hero" style="padding:3rem 1rem;">
+      <div class="page-tag">Réalisations</div>
+      <div class="page-title">Du <em>concret.</em><br>Des résultats réels.</div>
+      <div class="page-sub">Voici quelques projets réalisés pour des businesses de Lomé et du Togo.</div>
+    </div>
+
+    <div class="portfolio-grid-full">
+
+      <div class="pfc-card reveal">
+        <div class="pfc-thumb" style="background:linear-gradient(135deg,rgba(232,96,10,0.15),rgba(15,12,10,0.97));">
+          <div class="pf-mock" style="width:80%;height:120px;">
+            <div class="pf-mock-bar">
+              <div class="pf-mock-dot" style="background:#ff5f57;"></div>
+              <div class="pf-mock-dot" style="background:#febc2e;"></div>
+              <div class="pf-mock-dot" style="background:#28c840;"></div>
+            </div>
+            <div class="pf-mock-body">
+              <div class="pf-mock-line" style="width:65%;background:rgba(232,96,10,0.5);"></div>
+              <div class="pf-mock-line" style="width:90%;"></div>
+              <div class="pf-mock-line" style="width:72%;"></div>
+              <div style="margin-top:5px;display:flex;gap:4px;">
+                <div class="pf-mock-line" style="width:45%;height:18px;border-radius:3px;background:rgba(232,96,10,0.5);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pfc-overlay"><span>Voir le projet →</span></div>
+        </div>
+        <div class="pfc-body">
+          <div class="pfc-sector">Restaurant · Livraison · Lomé</div>
+          <div class="pfc-name">TogoFood — Livraison Repas</div>
+          <div class="pfc-context">Objectif : recevoir des commandes WhatsApp directement depuis la page.</div>
+          <div class="pfc-result">📈 +6 à 8 commandes/jour depuis la page</div>
+          <div class="pfc-tags">
+            <span class="pfc-pill">Boutique</span>
+            <span class="pfc-pill">WhatsApp intégré</span>
+            <span class="pfc-pill">Design sombre</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pfc-card reveal">
+        <div class="pfc-thumb" style="background:linear-gradient(135deg,rgba(50,100,50,0.15),rgba(12,15,12,0.97));">
+          <div class="pf-mock" style="width:80%;height:120px;">
+            <div class="pf-mock-bar">
+              <div class="pf-mock-dot" style="background:#ff5f57;"></div>
+              <div class="pf-mock-dot" style="background:#febc2e;"></div>
+              <div class="pf-mock-dot" style="background:#28c840;"></div>
+            </div>
+            <div class="pf-mock-body">
+              <div class="pf-mock-line" style="width:50%;background:rgba(100,180,100,0.5);"></div>
+              <div class="pf-mock-line" style="width:88%;"></div>
+              <div style="margin-top:5px;display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+                <div class="pf-mock-line" style="height:22px;border-radius:3px;background:rgba(255,255,255,0.06);"></div>
+                <div class="pf-mock-line" style="height:22px;border-radius:3px;background:rgba(255,255,255,0.06);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pfc-overlay"><span>Voir le projet →</span></div>
+        </div>
+        <div class="pfc-body">
+          <div class="pfc-sector">Coiffure & Beauté · Bè Kpota</div>
+          <div class="pfc-name">Salon Adjoa — Coiffure Africaine</div>
+          <div class="pfc-context">Objectif : être trouvable en ligne et recevoir des réservations WhatsApp.</div>
+          <div class="pfc-result">📈 Clients trouvent le numéro directement</div>
+          <div class="pfc-tags">
+            <span class="pfc-pill">Page 1 page</span>
+            <span class="pfc-pill">Réservation WA</span>
+            <span class="pfc-pill">Photos services</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pfc-card reveal">
+        <div class="pfc-thumb" style="background:linear-gradient(135deg,rgba(100,10,10,0.35),rgba(18,14,14,0.97));">
+          <div class="pf-mock" style="width:80%;height:120px;">
+            <div class="pf-mock-bar">
+              <div class="pf-mock-dot" style="background:#ff5f57;"></div>
+              <div class="pf-mock-dot" style="background:#febc2e;"></div>
+              <div class="pf-mock-dot" style="background:#28c840;"></div>
+            </div>
+            <div class="pf-mock-body">
+              <div class="pf-mock-line" style="width:60%;background:rgba(200,160,40,0.5);"></div>
+              <div class="pf-mock-line" style="width:85%;"></div>
+              <div class="pf-mock-line" style="width:70%;"></div>
+              <div style="margin-top:5px;">
+                <div class="pf-mock-line" style="width:48%;height:18px;border-radius:3px;background:rgba(200,160,40,0.4);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pfc-overlay"><span>Voir le projet →</span></div>
+        </div>
+        <div class="pfc-body">
+          <div class="pfc-sector">Mode Importée · Adawlato</div>
+          <div class="pfc-name">Boutique Mawuli — Mode & Accessoires</div>
+          <div class="pfc-context">Objectif : exposer le catalogue en ligne et recevoir des commandes WhatsApp.</div>
+          <div class="pfc-result">📈 Catalogue partagé dans 12 groupes WA</div>
+          <div class="pfc-tags">
+            <span class="pfc-pill">Boutique</span>
+            <span class="pfc-pill">Catalogue</span>
+            <span class="pfc-pill">Rouge & or</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pfc-card reveal">
+        <div class="pfc-thumb" style="background:linear-gradient(135deg,rgba(0,80,140,0.2),rgba(10,14,18,0.97));">
+          <div class="pf-mock" style="width:80%;height:120px;">
+            <div class="pf-mock-bar">
+              <div class="pf-mock-dot" style="background:#ff5f57;"></div>
+              <div class="pf-mock-dot" style="background:#febc2e;"></div>
+              <div class="pf-mock-dot" style="background:#28c840;"></div>
+            </div>
+            <div class="pf-mock-body">
+              <div class="pf-mock-line" style="width:55%;background:rgba(100,160,220,0.4);"></div>
+              <div class="pf-mock-line" style="width:82%;"></div>
+              <div style="margin-top:5px;display:grid;grid-template-columns:1fr 1fr;gap:4px;">
+                <div class="pf-mock-line" style="height:22px;border-radius:3px;background:rgba(255,255,255,0.06);"></div>
+                <div class="pf-mock-line" style="height:22px;border-radius:3px;background:rgba(255,255,255,0.06);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pfc-overlay"><span>Voir le projet →</span></div>
+        </div>
+        <div class="pfc-body">
+          <div class="pfc-sector">Cabinet médical · Tokoin</div>
+          <div class="pfc-name">Dr. Agbeko — Médecin Généraliste</div>
+          <div class="pfc-context">Objectif : gérer les prises de rendez-vous en ligne et informer les patients.</div>
+          <div class="pfc-result">📈 Rendez-vous par WhatsApp depuis la page</div>
+          <div class="pfc-tags">
+            <span class="pfc-pill">Site multi-pages</span>
+            <span class="pfc-pill">Horaires</span>
+            <span class="pfc-pill">Carte Maps</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pfc-card reveal">
+        <div class="pfc-thumb" style="background:linear-gradient(135deg,rgba(80,50,10,0.25),rgba(14,12,10,0.97));">
+          <div class="pf-mock" style="width:80%;height:120px;">
+            <div class="pf-mock-bar">
+              <div class="pf-mock-dot" style="background:#ff5f57;"></div>
+              <div class="pf-mock-dot" style="background:#febc2e;"></div>
+              <div class="pf-mock-dot" style="background:#28c840;"></div>
+            </div>
+            <div class="pf-mock-body">
+              <div class="pf-mock-line" style="width:58%;background:rgba(220,180,50,0.4);"></div>
+              <div class="pf-mock-line" style="width:80%;"></div>
+              <div class="pf-mock-line" style="width:65%;"></div>
+              <div style="margin-top:5px;">
+                <div class="pf-mock-line" style="width:50%;height:18px;border-radius:3px;background:rgba(220,180,50,0.35);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pfc-overlay"><span>Voir le projet →</span></div>
+        </div>
+        <div class="pfc-body">
+          <div class="pfc-sector">Photographe · Lomé Centre</div>
+          <div class="pfc-name">LomeDigital Photos</div>
+          <div class="pfc-context">Objectif : galerie en ligne professionnelle pour attirer des clients événements.</div>
+          <div class="pfc-result">📈 3 contrats événements en 1 mois</div>
+          <div class="pfc-tags">
+            <span class="pfc-pill">Portfolio</span>
+            <span class="pfc-pill">Galerie photos</span>
+            <span class="pfc-pill">Design premium</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="pf-soon reveal" onclick="window.open('https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20un%20site%20pour%20mon%20business%20%F0%9F%99%8F','_blank')">
+        <div class="pf-soon-icon">🚀</div>
+        <div class="pf-soon-text">Votre projet ici ?</div>
+        <div class="pf-soon-sub">Démarrez dès maintenant · Livraison 24h</div>
+      </div>
+
+    </div>
+
+    <div style="margin-top:2.5rem;text-align:center;padding-bottom:4rem;">
+      <a class="btn-primary" href="https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20un%20site%20pour%20mon%20business%20%F0%9F%99%8F" target="_blank">
+        📲 Je veux une page comme ça
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">TOGO<span>TEK</span></div>
+    <div class="footer-links">
+      <span class="footer-link" onclick="showPage('accueil')">Accueil</span>
+      <span class="footer-link" onclick="showPage('services')">Services</span>
+      <span class="footer-link" onclick="showPage('contact')">Contact</span>
+    </div>
+    <div class="footer-copy">© 2025 TOGOTEK · Lomé 🇹🇬</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+     PAGE CONTACT
+     ============================================================ -->
+<div id="page-contact" class="page">
+  <div style="padding:4rem 2rem;">
+    <div class="page-hero" style="padding:3rem 1rem;">
+      <div class="page-tag">Contact</div>
+      <div class="page-title">On démarre <em>quand vous voulez.</em></div>
+      <div class="page-sub">Réponse WhatsApp en moins de 15 min · 7j/7 · Devis gratuit et sans engagement</div>
+    </div>
+  </div>
+
+  <div class="contact-layout" style="padding-bottom:4rem;">
+    <div>
+      <div class="contact-info-title">La façon la<br>plus simple ?<br><em>WhatsApp.</em></div>
+      <div class="contact-info-desc">Envoyez-moi juste le nom de votre business et votre activité. Je vous réponds en moins de 15 minutes avec un plan d'action clair et un tarif précis.</div>
+      <div class="contact-items">
+        <a class="contact-item" href="https://wa.me/22897136797?text=Bonjour%20TOGOTEK%20!%20Je%20veux%20un%20devis%20gratuit%20%F0%9F%99%8F" target="_blank">
+          <div class="contact-item-icon">📲</div>
+          <div>
+            <div class="contact-item-label">WhatsApp · Réponse &lt;15 min</div>
+            <div class="contact-item-val">+228 97 13 67 97</div>
+          </div>
+        </a>
+        <div class="contact-item">
+          <div class="contact-item-icon">📍</div>
+          <div>
+            <div class="contact-item-label">Localisation</div>
+            <div class="contact-item-val">Lomé, Togo 🇹🇬</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">🕐</div>
+          <div>
+            <div class="contact-item-label">Disponibilité</div>
+            <div class="contact-item-val">7j/7 · 8h – 22h</div>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="contact-item-icon">💳</div>
+          <div>
+            <div class="contact-item-label">Paiement accepté</div>
+            <div class="contact-item-val">Flooz · T-Money · Cash</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-form-area">
+      <div class="form-title">Envoyer une demande</div>
+      <div class="form-sub">Je reçois votre demande directement sur WhatsApp et vous réponds rapidement.</div>
+      <div class="form-group">
+        <label class="form-label">Nom / Nom du business *</label>
+        <input class="form-input" placeholder="Ex: Boutique Afi, Restaurant Kpodji..." id="formName">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Service souhaité *</label>
+        <select class="form-select" id="formService">
+          <option value="">Choisissez un service...</option>
+          <option>Page web (5 000 F)</option>
+          <option>Site multi-pages (15 000 F)</option>
+          <option>Boutique en ligne (25 000 F)</option>
+          <option>CV professionnel (2 000 F)</option>
+          <option>Brochure PDF (5 000 F)</option>
+          <option>Visuel réseaux sociaux (1 000 F)</option>
+          <option>Carte de visite (1 500 F)</option>
+          <option>Autre / Je ne sais pas encore</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="form-label">Numéro WhatsApp</label>
+        <input class="form-input" placeholder="+228 XX XX XX XX" id="formPhone" type="tel">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Description du projet</label>
+        <textarea class="form-input" placeholder="Décrivez votre business, vos couleurs préférées, ce que vous souhaitez mettre en avant..." id="formDesc"></textarea>
+      </div>
+      <button class="form-submit" onclick="submitForm()">
+        <span>📲</span> Envoyer sur WhatsApp
+      </button>
+    </div>
+  </div>
+
+  <footer style="margin-top:0;">
+    <div class="footer-logo">TOGO<span>TEK</span></div>
+    <div class="footer-links">
+      <span class="footer-link" onclick="showPage('accueil')">Accueil</span>
+      <span class="footer-link" onclick="showPage('services')">Services</span>
+      <span class="footer-link" onclick="showPage('portfolio')">Portfolio</span>
+    </div>
+    <div class="footer-copy">© 2025 TOGOTEK · Lomé 🇹🇬</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+     PAGE À PROPOS
+     ============================================================ -->
+<div id="page-apropos" class="page">
+  <div style="padding:4rem 2rem;">
+    <div class="page-hero" style="padding:3rem 1rem;">
+      <div class="page-tag">À propos</div>
+      <div class="page-title">Une <em>petite structure.</em><br>Un vrai sérieux.</div>
+      <div class="page-sub">Pas une grande agence froide. Une personne locale qui comprend votre réalité et veut vraiment vous voir réussir en ligne.</div>
+    </div>
+
+    <div class="about-layout">
+      <div class="about-visual">
+        <div class="about-avatar-area">
+          <div class="about-avatar">G</div>
+          <div class="about-name">Godwin · TOGOTEK</div>
+          <div class="about-role">Développeur & Designer</div>
+        </div>
+        <div class="about-visual-bottom">
+          <div class="about-stat-grid">
+            <div class="about-stat">
+              <div class="about-stat-num">50+</div>
+              <div class="about-stat-label">Projets livrés</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num">24h</div>
+              <div class="about-stat-label">Délai garanti</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num">100%</div>
+              <div class="about-stat-label">Paiement après validation</div>
+            </div>
+            <div class="about-stat">
+              <div class="about-stat-num">7j/7</div>
+              <div class="about-stat-label">Disponibilité</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="about-tag">Mon histoire</div>
+        <div class="about-title">Je connais<br>la réalité <em>togolaise.</em></div>
+        <p class="about-text">J'ai vu trop de bons entrepreneurs togolais rater des opportunités parce qu'ils n'avaient pas de présence en ligne. Des talents réels, des produits de qualité, mais personne ne pouvait les trouver.</p>
+        <p class="about-text">TOGOTEK est né de ce constat. Mon objectif : donner à tout entrepreneur sérieux de Lomé — qu'il ait 5 000 F ou 25 000 F — une vraie présence digitale qui fonctionne. Simple, rapide, local.</p>
+        <p class="about-text">Je travaille via WhatsApp parce que c'est comme ça que tout le monde communique ici. Je prends Flooz et T-Money parce que c'est pratique. Et je ne vous fais payer qu'après, parce que c'est honnête.</p>
+
+        <div class="values-list">
+          <div class="value reveal">
+            <div class="value-icon">⚡</div>
+            <div>
+              <div class="value-title">Rapidité</div>
+              <div class="value-desc">Chaque journée sans présence en ligne, c'est des clients perdus. Je livre vite, sans compromis sur la qualité.</div>
+            </div>
+          </div>
+          <div class="value reveal">
+            <div class="value-icon">🤝</div>
+            <div>
+              <div class="value-title">Honnêteté</div>
+              <div class="value-desc">Vous voyez le résultat avant de payer. Aucun frais caché. Aucune surprise. C'est la base.</div>
+            </div>
+          </div>
+          <div class="value reveal">
+            <div class="value-icon">🎯</div>
+            <div>
+              <div class="value-title">Résultats concrets</div>
+              <div class="value-desc">Je ne fais pas de "belles pages" juste pour faire beau. Je crée des outils qui attirent des clients et génèrent des contacts WhatsApp.</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top:2rem;">
+          <a class="btn-primary" href="https://wa.me/22897136797?text=Bonjour%20Godwin%20!%20Je%20veux%20travailler%20avec%20TOGOTEK%20%F0%9F%99%8F" target="_blank">
+            📲 Me contacter sur WhatsApp
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-logo">TOGO<span>TEK</span></div>
+    <div class="footer-links">
+      <span class="footer-link" onclick="showPage('accueil')">Accueil</span>
+      <span class="footer-link" onclick="showPage('services')">Services</span>
+      <span class="footer-link" onclick="showPage('portfolio')">Portfolio</span>
+    </div>
+    <div class="footer-copy">© 2025 TOGOTEK · Lomé 🇹🇬</div>
+  </footer>
+</div>
+
+<!-- ============================================================
+     SCRIPTS
+     ============================================================ -->
+<script>
+function showPage(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  document.getElementById('page-'+id).classList.add('active');
+  document.querySelectorAll('.nav-btn').forEach(b=>{
+    if((id==='accueil'&&b.textContent.trim()==='Accueil')||
+       (id==='services'&&b.textContent.includes('Services'))||
+       (id==='portfolio'&&b.textContent.trim()==='Portfolio')||
+       (id==='apropos'&&b.textContent.includes('propos'))){
+      b.classList.add('active');
+    }
+  });
+  window.scrollTo(0,0);
+  document.getElementById('navMenu').classList.remove('open');
+  setTimeout(initReveal, 80);
+}
+
+function toggleMenu(){
+  document.getElementById('navMenu').classList.toggle('open');
+}
+
+function toggleFaq(el){
+  const isOpen = el.classList.contains('open');
+  document.querySelectorAll('.faq-item.open').forEach(f=>f.classList.remove('open'));
+  if(!isOpen) el.classList.add('open');
+}
+
+function initReveal(){
+  const observer = new IntersectionObserver(entries=>{
+    entries.forEach(e=>{if(e.isIntersecting) e.target.classList.add('visible');});
+  },{threshold:0.07});
+  document.querySelectorAll('.reveal').forEach(el=>{
+    el.classList.remove('visible');
+    observer.observe(el);
+  });
+}
+initReveal();
+
+function submitForm(){
+  const name = document.getElementById('formName').value.trim();
+  const service = document.getElementById('formService').value;
+  const phone = document.getElementById('formPhone').value.trim();
+  const desc = document.getElementById('formDesc').value.trim();
+  if(!name||!service){showToast('⚠️ Remplissez au moins votre nom et le service');return;}
+  const msg = `Bonjour TOGOTEK ! 👋\n\nNom / Business: ${name}\nService: ${service}\nTéléphone: ${phone||'Non renseigné'}\n\nProjet: ${desc||'Non renseigné'}`;
+  window.open('https://wa.me/22897136797?text='+encodeURIComponent(msg),'_blank');
+  showToast('✅ Redirection vers WhatsApp...');
+}
+
+function showToast(msg){
+  const t=document.getElementById('toast');
+  t.textContent=msg;t.classList.add('show');
+  setTimeout(()=>t.classList.remove('show'),3000);
+}
+</script>
+
+<!-- ============================================================
+     TOGOTEK CHATBOT — WIDGET FLOTTANT
+     ============================================================ -->
+<style>
+.tg-price-tag{display:inline-block;background:rgba(232,96,10,0.15);border:1px solid rgba(232,96,10,0.3);border-radius:.4rem;padding:.15rem .5rem;font-weight:700;color:#FF7C2A;font-size:.82rem;margin:.1rem .2rem .1rem 0;}
+#tg-notif{position:fixed;bottom:5.5rem;left:1.5rem;z-index:9998;background:var(--orange);color:#fff;border-radius:1rem 1rem 1rem .3rem;padding:.65rem 1rem;font-size:.82rem;font-weight:600;box-shadow:0 6px 20px rgba(232,96,10,.4);max-width:230px;line-height:1.5;animation:notifBounce .5s cubic-bezier(.34,1.56,.64,1);cursor:pointer;font-family:'Cabinet Grotesk',sans-serif;}
+@keyframes notifBounce{from{opacity:0;transform:translateY(10px) scale(.9)}to{opacity:1;transform:translateY(0) scale(1)}}
+#tg-toggle{position:fixed;bottom:1.5rem;left:1.5rem;z-index:9999;width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--orange),var(--orange2));border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(232,96,10,.5);transition:transform .3s cubic-bezier(.34,1.56,.64,1);animation:tgFloatPulse 3s infinite;}
+#tg-toggle:hover{transform:scale(1.1);}
+#tg-toggle.open{transform:scale(.9) rotate(45deg);animation:none;}
+@keyframes tgFloatPulse{0%,100%{box-shadow:0 8px 30px rgba(232,96,10,.5)}50%{box-shadow:0 8px 40px rgba(232,96,10,.8),0 0 0 12px rgba(232,96,10,.08)}}
+#tg-chat{position:fixed;bottom:5.8rem;left:1.5rem;z-index:9997;width:340px;height:550px;background:#141210;border-radius:1.4rem;border:1px solid rgba(232,96,10,.12);box-shadow:0 30px 80px rgba(0,0,0,.7),0 0 0 1px rgba(255,255,255,.03);display:flex;flex-direction:column;overflow:hidden;opacity:0;pointer-events:none;transform:translateY(20px) scale(.96);transition:all .35s cubic-bezier(.34,1.2,.64,1);}
+#tg-chat.open{opacity:1;pointer-events:all;transform:translateY(0) scale(1);}
+.tg-header{padding:1rem 1.2rem;background:rgba(12,11,9,.97);border-bottom:1px solid rgba(232,96,10,.1);display:flex;align-items:center;gap:.8rem;flex-shrink:0;}
+.tg-av{width:36px;height:36px;border-radius:50%;background:linear-gradient(135deg,var(--orange),var(--orange2));display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:.85rem;font-weight:900;color:#fff;box-shadow:0 4px 12px rgba(232,96,10,.4);flex-shrink:0;}
+.tg-hname{font-family:'Fraunces',serif;font-size:.9rem;font-weight:700;color:#FAF8F4;letter-spacing:-.2px;}
+.tg-hstatus{display:flex;align-items:center;gap:.35rem;margin-top:.1rem;}
+.tg-hdot{width:6px;height:6px;border-radius:50%;background:#1DB954;}
+.tg-hst{font-size:.65rem;color:#7A7060;}
+.tg-wa-hbtn{width:32px;height:32px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;text-decoration:none;flex-shrink:0;box-shadow:0 3px 10px rgba(37,211,102,.4);transition:transform .2s;}
+.tg-wa-hbtn:hover{transform:scale(1.1);}
+.tg-messages{flex:1;overflow-y:auto;padding:1rem .9rem;display:flex;flex-direction:column;gap:.75rem;scroll-behavior:smooth;}
+.tg-messages::-webkit-scrollbar{width:3px;}
+.tg-messages::-webkit-scrollbar-thumb{background:rgba(232,96,10,.25);border-radius:10px;}
+.tg-msg{display:flex;align-items:flex-end;gap:.5rem;animation:tgMsgIn .3s ease;}
+.tg-msg.tg-user{flex-direction:row-reverse;}
+@keyframes tgMsgIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
+.tg-mav{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--orange),var(--orange2));display:flex;align-items:center;justify-content:center;font-family:'Fraunces',serif;font-size:.6rem;font-weight:900;color:#fff;flex-shrink:0;}
+.tg-bubble{max-width:80%;padding:.65rem .9rem;font-size:.83rem;line-height:1.6;border-radius:1.1rem;}
+.tg-msg.tg-bot .tg-bubble{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);color:#F5EFE0;border-radius:1.1rem 1.1rem 1.1rem .3rem;}
+.tg-msg.tg-user .tg-bubble{background:linear-gradient(135deg,var(--orange),#CC5000);color:#fff;border-radius:1.1rem 1.1rem .3rem 1.1rem;}
+.tg-bubble strong{color:#FF7C2A;font-weight:700;}
+.tg-bubble ul{padding-left:1.1rem;margin-top:.3rem;}
+.tg-bubble li{margin-bottom:.2rem;}
+.tg-typing-wrap{display:flex;align-items:flex-end;gap:.5rem;}
+.tg-typing-bub{background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.07);border-radius:1.1rem 1.1rem 1.1rem .3rem;padding:.7rem 1rem;display:flex;gap:5px;align-items:center;}
+.tg-tdot{width:7px;height:7px;border-radius:50%;background:var(--orange);animation:tgDotP 1.2s infinite;}
+.tg-tdot:nth-child(2){animation-delay:.2s;}
+.tg-tdot:nth-child(3){animation-delay:.4s;}
+@keyframes tgDotP{0%,100%{opacity:.3;transform:scale(.8)}50%{opacity:1;transform:scale(1)}}
+.tg-quick{padding:.6rem .9rem 0;display:flex;flex-wrap:wrap;gap:.4rem;flex-shrink:0;}
+.tg-qbtn{background:rgba(232,96,10,.07);border:1px solid rgba(232,96,10,.2);border-radius:2rem;padding:.38rem .8rem;color:#C8BFA8;font-size:.73rem;cursor:pointer;transition:all .18s;font-family:'Cabinet Grotesk',sans-serif;white-space:nowrap;}
+.tg-qbtn:hover{background:rgba(232,96,10,.18);border-color:rgba(232,96,10,.5);color:#FF7C2A;}
+.tg-input-area{padding:.65rem .9rem;border-top:1px solid rgba(255,255,255,.05);background:rgba(12,11,9,.8);display:flex;gap:.5rem;align-items:center;flex-shrink:0;}
+.tg-input{flex:1;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.08);border-radius:.75rem;padding:.6rem .85rem;color:#FAF8F4;font-size:.83rem;font-family:'Cabinet Grotesk',sans-serif;outline:none;transition:border-color .2s;}
+.tg-input:focus{border-color:rgba(232,96,10,.45);}
+.tg-input::placeholder{color:#7A7060;}
+.tg-send-btn{width:36px;height:36px;border-radius:.65rem;background:var(--orange);border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .2s;flex-shrink:0;}
+.tg-send-btn:hover{background:var(--orange2);transform:scale(1.05);}
+.tg-foot{text-align:center;padding:.35rem;font-size:.6rem;color:#3A3025;letter-spacing:.05em;flex-shrink:0;font-family:'Cabinet Grotesk',sans-serif;}
+@media(max-width:480px){
+  #tg-chat{width:calc(100vw - 3rem);left:1.5rem;}
+}
+</style>
+
+<div id="tg-notif" onclick="tgToggle()">👋 Une question sur nos services ?</div>
+
+<button id="tg-toggle" onclick="tgToggle()" aria-label="Ouvrir le chat TOGOTEK">
+  <svg id="tg-icon-chat" width="24" height="24" viewBox="0 0 24 24" fill="white"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+  <svg id="tg-icon-close" width="22" height="22" viewBox="0 0 24 24" fill="white" style="display:none"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+</button>
+
+<div id="tg-chat">
+  <div class="tg-header">
+    <div class="tg-av">T</div>
+    <div style="flex:1">
+      <div class="tg-hname">TOGO<span style="color:var(--orange)">TEK</span> · Assistant</div>
+      <div class="tg-hstatus"><div class="tg-hdot"></div><span class="tg-hst">En ligne · Répond instantanément</span></div>
+    </div>
+    <a class="tg-wa-hbtn" href="https://wa.me/22897136797" target="_blank" title="WhatsApp">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+  </div>
+  <div class="tg-messages" id="tg-messages"></div>
+  <div class="tg-quick" id="tg-quick"></div>
+  <div class="tg-input-area">
+    <input class="tg-input" id="tg-input" placeholder="Écrivez votre question..." autocomplete="off"/>
+    <button class="tg-send-btn" onclick="tgSend()">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+    </button>
+  </div>
+  <div class="tg-foot">TOGOTEK · Lomé 🇹🇬 · +228 97 13 67 97</div>
+</div>
+
+<script>
+(function(){
+  const WA = "https://wa.me/22897136797";
+  let tgOpen = false, tgNotifHidden = false, tgStarted = false;
+
+  const KB = [
+    {keys:["bonjour","bonsoir","salut","hello","hi","coucou","hey"],reply:`Bonjour ! 👋 Bienvenue chez <strong>TOGOTEK</strong>, votre agence digitale à Lomé 🇹🇬<br><br>Je peux vous renseigner sur nos services, prix et comment commander. Que souhaitez-vous savoir ?`,quick:["Voir les prix","Comment commander ?","Vous faites quoi ?","Parler à un humain"]},
+    {keys:["togotek","c'est quoi","qui etes","vous faites quoi","agence","a propos","qui suis","vous etes","presentez","présent"],reply:`<strong>TOGOTEK</strong> est votre agence digitale 100% locale basée à Lomé, Togo 🇹🇬<br><br>On crée des <strong>pages web</strong>, des <strong>CV</strong>, des <strong>visuels</strong> et des <strong>boutiques en ligne</strong> pour les businesses togolais.<br><br>👉 Notre philosophie : vous voyez le résultat <strong>avant de payer</strong>. Zéro risque !`,quick:["Voir les prix","Comment commander ?","Voir le portfolio","Contact WhatsApp"]},
+    {keys:["prix","tarif","combien","cout","coute","cher","abordable","budget"],reply:`Voici nos tarifs 💰<br><br><span class="tg-price-tag">5 000 F</span> Page web 1 page — 24h<br><span class="tg-price-tag">15 000 F</span> Site multi-pages — 48h<br><span class="tg-price-tag">25 000 F</span> Boutique en ligne — 72h<br><span class="tg-price-tag">2 000 F</span> CV professionnel — 6h<br><span class="tg-price-tag">5 000 F</span> Brochure PDF — 24h<br><span class="tg-price-tag">1 000 F</span> Visuel réseaux — 2h<br><span class="tg-price-tag">1 500 F</span> Carte de visite — 1h<br><br>Paiement <strong>Flooz, T-Money ou cash</strong> après validation ✅`,quick:["Page web 5000F","Site multi-pages","Boutique en ligne","CV 2000F"]},
+    {keys:["page web","5000","5 000","une page","landing","site simple","site basique"],reply:`🌐 <strong>Page de présentation — 5 000 FCFA</strong><br><br><ul><li>Design professionnel et moderne</li><li>Bouton WhatsApp intégré</li><li>Services, horaires, localisation</li><li>Visible mobile et PC</li><li>Livraison en <strong>24h</strong></li><li>Paiement après validation</li></ul><br>Idéal pour : boutiques, coiffeurs, restaurants, prestataires.`,quick:["Commander maintenant","Voir un exemple","Site multi-pages","Retour aux tarifs"]},
+    {keys:["multi","plusieurs pages","site complet","15000","15 000","site pro","site professionnel","clinique","ecole","hotel","restaurant"],reply:`🏪 <strong>Site multi-pages — 15 000 FCFA</strong> ⭐ Le plus demandé<br><br><ul><li>Pages : Accueil, Services, À propos, Contact</li><li>Navigation fluide et moderne</li><li>Design premium adapté à votre image</li><li>Livraison en <strong>48h</strong></li><li>Paiement après validation</li></ul>`,quick:["Commander maintenant","Voir un exemple","Boutique en ligne","Retour aux tarifs"]},
+    {keys:["boutique","shop","ecommerce","vendre en ligne","catalogue","25000","25 000","vente","produit"],reply:`🛒 <strong>Boutique en ligne — 25 000 FCFA</strong><br><br><ul><li>Catalogue produits avec photos et prix</li><li>Bouton "Commander sur WhatsApp" intégré</li><li>Vos clients commandent 24h/24</li><li>Livraison en <strong>72h</strong></li><li>Paiement après validation</li></ul>`,quick:["Commander maintenant","Page web simple","Retour aux tarifs","Contact WhatsApp"]},
+    {keys:["cv","curriculum","emploi","job","candidature","2000","2 000"],reply:`📄 <strong>CV professionnel PDF — 2 000 FCFA</strong><br><br><ul><li>Design soigné et moderne</li><li>Prêt à envoyer sur WhatsApp ou email</li><li>Format PDF haute qualité</li><li>Livraison en <strong>6h chrono</strong></li></ul>`,quick:["Commander mon CV","Retour aux tarifs","Contact WhatsApp"]},
+    {keys:["brochure","catalogue","flyer","pdf","document"],reply:`📋 <strong>Brochure & Catalogue PDF — 5 000 FCFA</strong><br><br><ul><li>Présentation visuelle de vos produits/services</li><li>À envoyer dans vos groupes WhatsApp</li><li>À imprimer ou partager par email</li><li>Livraison en <strong>24h</strong></li></ul>`,quick:["Commander","Visuels réseaux","Retour aux tarifs"]},
+    {keys:["visuel","post","facebook","instagram","story","banniere","reseaux","social","image","affiche","pub","1000","1 000"],reply:`🖼️ <strong>Visuels réseaux sociaux — 1 000 FCFA/visuel</strong><br><br><ul><li>Posts Facebook & Instagram</li><li>Bannières et stories attractives</li><li>Avec votre logo et couleurs</li><li>Livraison en <strong>2h</strong></li></ul>`,quick:["Commander","Carte de visite","Retour aux tarifs"]},
+    {keys:["carte de visite","carte visite","business card","1500","1 500"],reply:`💳 <strong>Carte de visite digitale — 1 500 FCFA</strong><br><br><ul><li>Image à partager sur WhatsApp</li><li>Nom, poste, contacts, logo</li><li>Design professionnel</li><li>Livraison en <strong>1h</strong></li></ul>`,quick:["Commander","Retour aux tarifs"]},
+    {keys:["comment","commander","commande","processus","etapes","marche","fonctionne","demarrer","commencer"],reply:`🚀 <strong>Commander en 4 étapes :</strong><br><br><strong>01 —</strong> Envoyez vos infos sur WhatsApp<br><em>(nom du business, activité, couleurs)</em><br><br><strong>02 —</strong> Je crée en 24h et vous envoie un aperçu<br><br><strong>03 —</strong> Vous validez — modifications gratuites jusqu'à satisfaction<br><br><strong>04 —</strong> Vous payez et recevez le fichier<br><br>⚡ Simple, rapide, sans risque !`,quick:["Démarrer sur WhatsApp","Modes de paiement","Délais de livraison","Retour aux prix"]},
+    {keys:["paiement","payer","flooz","tmoney","t-money","cash","avance","risque","avant de payer","apres","validation"],reply:`💳 <strong>Modes de paiement :</strong><br><br>✅ <strong>Flooz</strong> (Togocel)<br>✅ <strong>T-Money</strong> (Moov)<br>✅ <strong>Cash</strong> en main propre<br><br>🛡️ Vous payez <strong>UNIQUEMENT après validation</strong>. Zéro risque !`,quick:["Comment commander ?","Délais de livraison","Contact WhatsApp"]},
+    {keys:["delai","livraison","temps","combien de temps","quand","duree","24h","48h","rapide","vite"],reply:`⚡ <strong>Délais de livraison :</strong><br><br>🌐 Page web 1 page → <strong>24h</strong><br>🏪 Site multi-pages → <strong>48h</strong><br>🛒 Boutique en ligne → <strong>72h</strong><br>📄 CV → <strong>6h</strong><br>📋 Brochure → <strong>24h</strong><br>🖼️ Visuel réseaux → <strong>2h</strong><br>💳 Carte de visite → <strong>1h</strong>`,quick:["Commander","Voir les prix","Contact WhatsApp"]},
+    {keys:["exemple","portfolio","realisation","travaux","deja fait","voir","montrer","sample"],reply:`🎨 <strong>Quelques réalisations :</strong><br><br>🍽️ <strong>TogoFood</strong> — Livraison de repas, design sombre<br>💇 <strong>Salon Adjoa</strong> — Coiffure africaine, Bè<br>👗 <strong>Boutique Mawuli</strong> — Mode importée, Adawlato<br><br>👉 Consultez la page Portfolio sur notre site !`,quick:["Commander maintenant","Voir les prix","Contact WhatsApp"]},
+    {keys:["garantie","satisfait","modification","retouche","changer","revision"],reply:`🛡️ <strong>Nos garanties :</strong><br><br>✅ Vous voyez le résultat <strong>avant de payer</strong><br>✅ <strong>Modifications gratuites</strong> jusqu'à satisfaction<br>✅ Pas de limite de retouches<br>✅ Paiement uniquement après validation<br><br>Notre objectif : 100% satisfaction !`,quick:["Commander","Comment commander ?","Contact WhatsApp"]},
+    {keys:["contact","whatsapp","numero","telephone","appel","joindre","parler","humain","godwin"],reply:`📲 <strong>Nous contacter :</strong><br><br>WhatsApp : <strong>+228 97 13 67 97</strong><br>Disponible <strong>7j/7</strong><br><br>On répond en moins de 15 minutes !`,quick:["Ouvrir WhatsApp","Voir les prix","Comment commander ?"]},
+    {keys:["ou","lome","togo","adresse","localisation","base","situe","quartier"],reply:`📍 TOGOTEK est basé à <strong>Lomé, Togo</strong> 🇹🇬<br><br>On travaille à distance via <strong>WhatsApp</strong> — pas besoin de se déplacer ! Vous envoyez vos infos, on crée, vous validez, vous payez.`,quick:["Comment commander ?","Contact WhatsApp","Voir les prix"]},
+  ];
+
+  const ACTIONS = {
+    "Commander maintenant":{redirect:WA},
+    "Démarrer sur WhatsApp":{redirect:WA},
+    "Contacter sur WhatsApp":{redirect:WA},
+    "Commander mon CV":{redirect:WA},
+    "Ouvrir WhatsApp":{redirect:WA},
+    "Contact WhatsApp":{redirect:WA},
+    "Commander":{redirect:WA},
+    "Parler à un humain":{reply:`Bien sûr ! Cliquez sur le bouton ci-dessous pour nous rejoindre sur <strong>WhatsApp</strong> 👇<br><br>On répond en moins de 15 minutes !`,quick:["Ouvrir WhatsApp","Retour aux prix"]},
+    "Voir les prix":{reply:`Voici nos tarifs 💰<br><br><span class="tg-price-tag">5 000 F</span> Page web 1 page — 24h<br><span class="tg-price-tag">15 000 F</span> Site multi-pages — 48h<br><span class="tg-price-tag">25 000 F</span> Boutique — 72h<br><span class="tg-price-tag">2 000 F</span> CV — 6h<br><span class="tg-price-tag">5 000 F</span> Brochure — 24h<br><span class="tg-price-tag">1 000 F</span> Visuel réseaux — 2h<br><span class="tg-price-tag">1 500 F</span> Carte visite — 1h<br><br>Paiement <strong>Flooz, T-Money ou cash</strong> après validation ✅`,quick:["Page web 5000F","Site multi-pages","Boutique en ligne","CV 2000F"]},
+    "Retour aux tarifs":{reply:`Sur quel service voulez-vous plus de détails ?`,quick:["Page web 5000F","Site multi-pages","Boutique en ligne","CV 2000F"]},
+    "Retour aux prix":{reply:`Sur quoi puis-je vous aider ?`,quick:["Voir les prix","Comment commander ?","Contact WhatsApp"]},
+    "Modes de paiement":{reply:`💳 <strong>Modes de paiement :</strong><br><br>✅ Flooz (Togocel)<br>✅ T-Money (Moov)<br>✅ Cash<br><br>Toujours après validation de votre résultat !`,quick:["Comment commander ?","Contact WhatsApp"]},
+    "Délais de livraison":{reply:`⚡ Page web → <strong>24h</strong> · Site multi-pages → <strong>48h</strong> · Boutique → <strong>72h</strong> · CV → <strong>6h</strong> · Visuel → <strong>2h</strong>`,quick:["Commander","Voir les prix"]},
+    "Voir un exemple":{reply:`🎨 <strong>Réalisations :</strong><br><br>🍽️ TogoFood · 💇 Salon Adjoa · 👗 Boutique Mawuli<br><br>Consultez la section Portfolio sur notre site pour voir les détails !`,quick:["Commander maintenant","Voir les prix"]},
+    "Voir le portfolio":{reply:`🎨 <strong>Réalisations :</strong><br><br>🍽️ TogoFood · 💇 Salon Adjoa · 👗 Boutique Mawuli<br><br>Consultez la section Portfolio sur notre site !`,quick:["Commander maintenant","Voir les prix"]},
+    "Page web 5000F":{reply:`🌐 <strong>Page de présentation — 5 000 FCFA</strong><br><br>Design pro, bouton WhatsApp intégré, visible mobile & PC. Livraison en <strong>24h</strong>. Paiement après validation.`,quick:["Commander maintenant","Site multi-pages","Retour aux tarifs"]},
+    "Site multi-pages":{reply:`🏪 <strong>Site multi-pages — 15 000 FCFA</strong> ⭐<br><br>Accueil, Services, À propos, Contact. Navigation fluide. Livraison en <strong>48h</strong>. Paiement après validation.`,quick:["Commander maintenant","Boutique en ligne","Retour aux tarifs"]},
+    "Boutique en ligne":{reply:`🛒 <strong>Boutique — 25 000 FCFA</strong><br><br>Catalogue produits, bouton Commander WhatsApp, ventes 24h/24. Livraison en <strong>72h</strong>.`,quick:["Commander maintenant","Retour aux tarifs"]},
+    "CV 2000F":{reply:`📄 <strong>CV professionnel — 2 000 FCFA</strong><br><br>Design moderne, PDF prêt à envoyer. Livraison en <strong>6h</strong>.`,quick:["Commander mon CV","Retour aux tarifs"]},
+    "Visuels réseaux":{reply:`🖼️ <strong>Visuels réseaux — 1 000 FCFA/visuel</strong><br><br>Posts, stories, bannières. Avec votre logo. Livraison en <strong>2h</strong>.`,quick:["Commander","Retour aux tarifs"]},
+    "Vous faites quoi ?":{reply:`<strong>TOGOTEK</strong> crée pour les businesses togolais :<br><br>🌐 Sites web · 🛒 Boutiques en ligne<br>📄 CV professionnels · 🖼️ Visuels réseaux<br>📋 Brochures · 💳 Cartes de visite<br><br>100% local, paiement après validation !`,quick:["Voir les prix","Comment commander ?","Contact WhatsApp"]},
+  };
+
+  const DEFAULT = {reply:`Je n'ai pas bien compris 😅<br><br>Posez-moi des questions sur nos <strong>prix</strong>, <strong>services</strong>, <strong>délais</strong> ou <strong>comment commander</strong>. Ou contactez-nous directement sur WhatsApp !`,quick:["Voir les prix","Comment commander ?","Contact WhatsApp","Voir le portfolio"]};
+
+  function normalize(t){ return t.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,""); }
+
+  function find(text){
+    const t = normalize(text);
+    for(const e of KB){ if(e.keys.some(k=>t.includes(normalize(k)))) return e; }
+    return null;
+  }
+
+  function botMsg(html, quick=[]){
+    const msgs = document.getElementById('tg-messages');
+    const qEl = document.getElementById('tg-quick');
+    const typing = document.createElement('div');
+    typing.className = 'tg-typing-wrap';
+    typing.innerHTML = `<div class="tg-mav">T</div><div class="tg-typing-bub"><div class="tg-tdot"></div><div class="tg-tdot"></div><div class="tg-tdot"></div></div>`;
+    msgs.appendChild(typing);
+    msgs.scrollTop = msgs.scrollHeight;
+    setTimeout(()=>{
+      msgs.removeChild(typing);
+      const d = document.createElement('div');
+      d.className = 'tg-msg tg-bot';
+      d.innerHTML = `<div class="tg-mav">T</div><div class="tg-bubble">${html}</div>`;
+      msgs.appendChild(d);
+      msgs.scrollTop = msgs.scrollHeight;
+      qEl.innerHTML = '';
+      quick.forEach(label=>{
+        const b = document.createElement('button');
+        b.className = 'tg-qbtn';
+        b.textContent = label;
+        b.onclick = ()=>tgQuick(label);
+        qEl.appendChild(b);
+      });
+    }, 800);
+  }
+
+  function userMsg(text){
+    const msgs = document.getElementById('tg-messages');
+    document.getElementById('tg-quick').innerHTML = '';
+    const d = document.createElement('div');
+    d.className = 'tg-msg tg-user';
+    d.innerHTML = `<div class="tg-bubble">${text}</div>`;
+    msgs.appendChild(d);
+    msgs.scrollTop = msgs.scrollHeight;
+  }
+
+  window.tgQuick = function(label){
+    if(ACTIONS[label]?.redirect){ window.open(ACTIONS[label].redirect,'_blank'); return; }
+    userMsg(label);
+    if(ACTIONS[label]){ setTimeout(()=>botMsg(ACTIONS[label].reply, ACTIONS[label].quick||[]),100); return; }
+    const f = find(label);
+    setTimeout(()=>botMsg(f?f.reply:DEFAULT.reply, f?f.quick:DEFAULT.quick), 100);
+  };
+
+  window.tgSend = function(){
+    const inp = document.getElementById('tg-input');
+    const text = inp.value.trim();
+    if(!text) return;
+    inp.value = '';
+    userMsg(text);
+    const f = find(text);
+    setTimeout(()=>botMsg(f?f.reply:DEFAULT.reply, f?f.quick:DEFAULT.quick), 100);
+  };
+
+  window.tgToggle = function(){
+    tgOpen = !tgOpen;
+    document.getElementById('tg-chat').classList.toggle('open', tgOpen);
+    document.getElementById('tg-toggle').classList.toggle('open', tgOpen);
+    document.getElementById('tg-icon-chat').style.display = tgOpen?'none':'block';
+    document.getElementById('tg-icon-close').style.display = tgOpen?'block':'none';
+    if(tgOpen && !tgNotifHidden){ document.getElementById('tg-notif').style.display='none'; tgNotifHidden=true; }
+    if(tgOpen && !tgStarted){
+      tgStarted = true;
+      setTimeout(()=>botMsg(`Bonjour ! 👋 Bienvenue chez <strong>TOGOTEK</strong>, votre agence digitale à Lomé 🇹🇬<br><br>Je peux vous renseigner sur nos <strong>services, prix et comment commander</strong>. Comment puis-je vous aider ?`,["Voir les prix","Comment commander ?","Vous faites quoi ?","Parler à un humain"]),300);
+    }
+  };
+
+  document.getElementById('tg-input').addEventListener('keydown', e=>{ if(e.key==='Enter') tgSend(); });
+  setTimeout(()=>{ const n=document.getElementById('tg-notif'); if(n&&!tgNotifHidden) n.style.display='none'; }, 8000);
+})();
+</script>
+</body>
+</html>
